@@ -5,7 +5,13 @@
 - [x] Hero có ảnh nền, overlay và CTA rõ.
 - [x] Typography dùng Playfair Display + Be Vietnam Pro.
 - [x] Màu sắc bám theo README.
-- [x] Palette đã chuyển sang xanh đồi núi sáng hơn, bớt cảm giác tối.
+- [x] Palette hiện dùng nền chủ đạo `#9C2007` theo yêu cầu mới.
+- [x] Các section có band màu, separator và surface rõ hơn để tránh cảm giác đồng màu.
+- [x] Màu nền chủ đạo đã đổi sang `#9C2007`.
+- [x] Hero title/quote đã chỉnh để tránh chữ in hoa lớn xuống dòng xấu.
+- [x] Các heading ngắn như “Bạn đang tìm kiếm điều gì?” và “5 đỉnh núi — 5 độ cao” không còn gãy dòng cụt trên màn rộng.
+- [x] Typography chữ nhỏ đã được tăng size/weight/line-height để dễ đọc và cuốn hơn.
+- [x] Headline lớn trong explore tab đã giảm size và bỏ dấu chấm cuối.
 - [x] Không dùng framework frontend.
 - [x] Có responsive CSS cho desktop, tablet, mobile.
 - [x] Có CSS chặn horizontal overflow ở cấp `body`.
@@ -17,9 +23,12 @@
 - [x] Mỗi núi có độ cao, vị trí, mô tả, độ khó, mùa đẹp, điểm nhấn.
 - [x] Nút “Khám phá” mở explore tab riêng giải thích vì sao từng núi đáng đến.
 - [x] Mỗi vùng chi tiết có chỗ đặt ảnh nổi bật.
+- [x] Các vùng ảnh chính hiển thị rõ đường dẫn file ảnh để thay thế sau.
+- [x] Các ảnh section chính đã dùng JPG thật nếu file JPG đã có.
 - [x] Mỗi vùng chi tiết có slot ghi vị trí video 10-30 giây để bổ sung sau.
 - [x] Vùng video trong explore tab đủ rộng và nổi bật.
 - [x] Nội dung khám phá đã mở rộng bằng thông tin tra cứu từ nguồn tham khảo.
+- [x] Nội dung explore tab đã được bổ sung chọn lọc từ `info.md`.
 - [x] Có placeholder quote/review và ghi rõ chỉ thêm khi có nguồn xác minh.
 - [x] Có About Me: Nguyễn Văn Độ, Linux Software Developer.
 - [x] Có vùng `**************` để tự điền thông tin sau.
@@ -37,7 +46,7 @@
 - [x] Explore tab cho nút “Khám phá”.
 - [x] Nút quay lại trong explore tab.
 - [x] Browser Back đóng explore tab.
-- [x] Altitude Comparison animation.
+- [x] Altitude Journey đã nâng cấp thành dãy núi silhouette + count-up animation.
 - [x] Find Your Mountain quiz.
 - [x] Đã bỏ section Gallery / Moments Above The Clouds.
 - [x] ESC đóng menu/explore tab.
@@ -55,6 +64,7 @@
 - [x] Có helper event `quiz_start`.
 - [x] Có helper event `quiz_result`.
 - [x] Có helper event `explore_detail_open`.
+- [x] Video trong explore tab tự dừng và quay về đầu khi người dùng back/đóng tab.
 - [x] Có helper event `cta_click`.
 - [x] Có scroll depth tracking 25/50/75/90.
 - [ ] Thay `G-XXXXXXXXXX` bằng Measurement ID thật khi có GA4.

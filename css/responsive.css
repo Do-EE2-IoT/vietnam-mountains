@@ -44,7 +44,7 @@
     padding: 12px;
     border: 1px solid var(--line);
     border-radius: 6px;
-    background: rgba(21, 51, 39, 0.96);
+    background: rgba(121, 28, 9, 0.96);
     box-shadow: var(--shadow);
   }
 
@@ -117,37 +117,42 @@
     min-height: auto;
   }
 
+  .mountain-detail__hero h2 {
+    font-size: clamp(2rem, 7.5vw, 3.25rem);
+  }
+
   .video-slot--large {
     min-height: 360px;
   }
 
-  .altitude__chart {
-    height: auto;
-    grid-template-columns: 1fr;
-    align-items: stretch;
+  .altitude__stage {
+    min-height: 540px;
+    grid-template-columns: repeat(5, minmax(96px, 1fr));
+    overflow-x: auto;
+    align-items: end;
   }
 
-  .altitude__bar {
-    min-height: 74px;
-    grid-template-columns: 1fr 140px 78px;
-    grid-template-rows: auto;
-    align-items: center;
-    text-align: left;
+  .altitude__ridge {
+    height: 50%;
+    min-width: 620px;
+    opacity: 0.45;
   }
 
-  .altitude__bar span {
-    width: 0;
-    height: 18px;
-    border-radius: 0 4px 4px 0;
+  .altitude-mountain {
+    height: 390px;
+    min-width: 96px;
   }
 
-  .altitude__chart.is-animated .altitude__bar span {
-    width: var(--height);
-    height: 18px;
+  .mountain-shape {
+    width: 130px;
   }
 
-  .altitude__bar strong {
-    min-height: 0;
+  .altitude-mountain__height {
+    font-size: 0.7rem;
+  }
+
+  .altitude-mountain strong {
+    font-size: 0.78rem;
   }
 
   .quiz__grid,
@@ -168,15 +173,21 @@
   }
 
   h1 {
-    font-size: clamp(3.1rem, 16vw, 4.6rem);
+    font-size: clamp(3rem, 15vw, 4.4rem);
   }
 
   h2 {
     font-size: clamp(2rem, 11vw, 3.4rem);
   }
 
+  .section-title--compact {
+    font-size: clamp(2rem, 9.5vw, 3rem);
+    white-space: normal;
+  }
+
   .hero__lead {
-    font-size: 1.16rem;
+    max-width: 100%;
+    font-size: 1.25rem;
   }
 
   .hero__actions,

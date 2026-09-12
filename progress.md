@@ -94,3 +94,111 @@
 - Đã giảm độ tối overlay hero/closing/explore tab để ảnh và nội dung thoáng hơn.
 - Đã làm card, quiz, altitude chart và mobile menu sáng hơn.
 - Đã cập nhật lại mục màu trong `readme.md`.
+
+## Cập nhật màu chủ đạo và hero typography
+
+- Đã đổi màu nền chủ đạo theo yêu cầu sang `#9C2007`.
+- Đã cập nhật các biến màu liên quan:
+  - `--bg-dark: #9C2007`
+  - `--bg-green: #B43B14`
+  - `--surface: #7F260F`
+  - `--text-muted: #F0D9C8`
+- Đã đổi overlay hero/explore tab/closing/footer/mobile menu theo tone đỏ nâu mới.
+- Đã sửa hero headline để không ép uppercase quá lớn.
+- Đã chuyển câu “5 đỉnh núi...” thành quote:
+  - “5 đỉnh núi, 5 tính cách, 1 hành trình chạm mây.”
+- Đã style quote bằng font heading, border accent và line-height chặt hơn để trình bày đẹp hơn.
+- Đã kiểm tra lại:
+  - `node --check js/main.js`
+  - `node --check js/analytics.js`
+  - local server mới trả HTTP 200 tại `http://127.0.0.1:8000/`
+
+## Cập nhật phân tách section
+
+- Giữ màu nền chủ đạo `#9C2007`.
+- Đã thêm các màu band phụ cùng tone đỏ nâu để các section không bị hòa thành một mảng:
+  - `--band-a`
+  - `--band-b`
+  - `--band-c`
+  - `--band-d`
+- Đã tăng độ rõ của separator line bằng `--section-line`.
+- Đã thêm đường phân tách gradient ở đầu các section/story/closing.
+- Đã làm card, data-list, quiz fieldset và altitude chart nổi hơn bằng background sáng hơn, border rõ hơn và shadow nhẹ.
+
+## Cập nhật hiển thị đường dẫn ảnh
+
+- Đã thêm label đường dẫn ảnh trực tiếp trên các vùng ảnh chính:
+  - Hero: `assets/images/hero/fansipan-hero.webp`
+  - Fansipan story: `assets/images/fansipan/fansipan-01.jpg`
+  - Yên Tử story: `assets/images/yen-tu/yen-tu-01.webp`
+  - Tà Chì Nhù story: `assets/images/ta-chi-nhu/ta-chi-nhu-01.webp`
+  - Ky Quan San story: `assets/images/ky-quan-san/ky-quan-san-01.webp`
+  - Lảo Thẩn story: `assets/images/lao-than/lao-than-01.webp`
+  - Closing: `assets/images/fansipan/fansipan-03.jpg`
+- Các ảnh chi tiết trong explore tab vẫn giữ caption đường dẫn riêng.
+- Đã thêm CSS `.image-path` và figcaption overlay để nhìn rõ đường dẫn ảnh mà không phá layout.
+- Đã cập nhật Fansipan story sang ảnh JPG thật: `assets/images/fansipan/fansipan-01.jpg`.
+- Đã cập nhật các ảnh section chính sang JPG khi đã có file thật:
+  - `assets/images/yen-tu/yen-tu-01.jpg`
+  - `assets/images/ta-chi-nhu/ta-chi-nhu-01.jpg`
+  - `assets/images/ky-quan-san/ky-quan-san-01.jpg`
+  - `assets/images/lao-than/lao-than-01.jpg`
+- Các ảnh chưa có JPG tương ứng vẫn giữ WebP placeholder để tránh vỡ giao diện.
+- Đã cập nhật ảnh closing sang JPG thật: `assets/images/fansipan/fansipan-03.jpg`.
+
+## Cập nhật video Fansipan
+
+- Đã nhúng video Fansipan vào explore tab:
+  - `assets/videos/fansipan.mp4`
+- Video slot vẫn hiển thị rõ đường dẫn `assets/videos/fansipan.mp4` trong UI để dễ biết file đang dùng.
+- Video dùng `muted`, `loop`, `playsinline`, `controls`, `preload="metadata"`.
+
+## Bổ sung nội dung từ `info.md`
+
+- Đã đọc và chọn lọc nội dung từ `info.md` để bổ sung vào các explore tab.
+- Fansipan: thêm fact độ cao đo lại 3.147,3 m, hệ sinh thái Hoàng Liên, khí hậu núi cao, nguồn gốc tên Hủa Xi Pan và câu chuyện từ trekking sang cáp treo.
+- Yên Tử: thêm câu chuyện Trần Nhân Tông, Thiền phái Trúc Lâm, di sản UNESCO 2025, quần thể di tích liên vùng và hành trình hành hương qua rừng/chùa/tháp.
+- Tà Chì Nhù: thêm “đại dương trên mây”, hoa Chi Pâu nghĩa “không biết”, cung trekking khó, nắng gió, đàn ngựa và nhiều tên gọi địa phương.
+- Ky Quan San: thêm tên Bạch Mộc Lương Tử, top núi cao Việt Nam, Núi Muối, mùa đông băng giá, hai hướng tiếp cận Lào Cai/Lai Châu.
+- Lảo Thẩn: thêm “nóc nhà Y Tý”, săn mây/bình minh, cung phù hợp người mới hơn, hoa đỗ quyên, văn hóa Y Tý/Hà Nhì và ghi chú độ cao dao động theo nguồn.
+
+## Cập nhật typography chữ nhỏ
+
+- Đã tăng font-size mặc định của body từ 16px lên 17px.
+- Đã tăng line-height, font-weight và độ sáng chữ phụ để nội dung nhỏ dễ đọc hơn.
+- Đã làm đẹp typography cho:
+  - paragraph trong explore tab
+  - highlight list
+  - data-list
+  - selector card
+  - intro metrics
+  - quiz result
+  - about/closing text
+- Giữ caption đường dẫn ảnh ở dạng monospace nhỏ vì đây là thông tin kỹ thuật để thay file.
+- Đã giảm kích thước headline lớn trong explore tab để ít bị xuống dòng hơn.
+- Đã bỏ dấu chấm cuối khỏi các headline explore tab vì đây là đầu đề mục.
+
+## Cập nhật hành vi video khi quay lại
+
+- Khi đóng explore tab bằng nút quay lại, browser Back hoặc ESC, video trong tab sẽ tự `pause()`.
+- Video cũng được reset `currentTime = 0` để lần mở sau phát lại từ đầu.
+- Khi chuyển từ explore tab này sang tab khác, video ở tab cũ cũng tự dừng và về đầu.
+
+## Cập nhật heading bị gãy dòng xấu
+
+- Đã thêm class `.section-title--compact` cho các tiêu đề ngắn:
+  - “Bạn đang tìm kiếm điều gì?”
+  - “5 đỉnh núi — 5 độ cao”
+- Trên desktop/tablet, tiêu đề compact giữ trên một dòng để tránh bị cắt cụt chữ cuối.
+- Trên mobile, tiêu đề được phép xuống dòng tự nhiên với cỡ chữ nhỏ hơn để không tràn ngang.
+- Đã tăng `max-width` của `.section-heading` từ 720px lên 900px.
+
+## Nâng cấp Altitude Journey
+
+- Đã thay chart cột/card chữ bằng mô hình dãy núi trực quan.
+- Mỗi độ cao là một silhouette ngọn núi bằng CSS `clip-path`, cao/thấp theo dữ liệu thực tế.
+- Chữ trong khu vực này được giảm xuống còn nhãn nhỏ: tên núi và số mét trên đỉnh.
+- Số mét vẫn count-up từ 0 khi section vào viewport.
+- Hover vào núi có hiệu ứng nâng nhẹ và highlight.
+- Animation dùng CSS + JavaScript thuần, không thêm thư viện.
+- Responsive mobile cho phép cuộn ngang nhẹ để giữ hình núi không bị bóp méo.

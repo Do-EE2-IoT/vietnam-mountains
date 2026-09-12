@@ -303,16 +303,22 @@ Không nên thiết kế theo kiểu:
 ## Màu nền chính
 
 ```css
---bg-dark: #153327;
---bg-green: #1F4A35;
---surface: #2C5A43;
+--bg-dark: #9C2007;
+--bg-green: #B43B14;
+--surface: #7F260F;
+--band-a: #9C2007;
+--band-b: #B23610;
+--band-c: #7F1D08;
+--band-d: #C6531B;
 --text-main: #FBF8EE;
---text-muted: #D4DED2;
+--text-muted: #F0D9C8;
 --accent-gold: #F0C96C;
 --cloud-white: #F7F8F4;
 ```
 
-Tone tổng thể nên sáng hơn bản xanh đen ban đầu, thiên về **xanh đồi núi / forest green / sage green** để website có cảm giác thoáng, tươi và dễ đọc hơn.
+Tone tổng thể sử dụng nền chủ đạo **#9C2007**, phối với vàng sáng và chữ kem để tạo cảm giác nổi bật, ấm và có chiều sâu.
+
+Các section không nên dùng cùng một màu phẳng. Cần dùng band màu phụ cùng tone, separator line và surface nổi hơn để người xem phân biệt rõ từng mục.
 
 Có thể sử dụng màu accent phụ cho từng núi:
 

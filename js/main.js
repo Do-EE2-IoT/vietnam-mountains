@@ -132,10 +132,33 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
+    function animateCount(element, target) {
+      const duration = 1100;
+      const startTime = performance.now();
+
+      function tick(now) {
+        const progress = Math.min((now - startTime) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        element.textContent = Math.round(target * eased).toLocaleString("vi-VN");
+
+        if (progress < 1) {
+          requestAnimationFrame(tick);
+        }
+      }
+
+      requestAnimationFrame(tick);
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           chart.classList.add("is-animated");
+          chart.querySelectorAll("[data-value]").forEach((item) => {
+            const counter = item.querySelector("[data-count]");
+            if (counter) {
+              animateCount(counter, Number(item.dataset.value));
+            }
+          });
           observer.disconnect();
         }
       },
@@ -149,11 +172,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const detailButtons = document.querySelectorAll("[data-detail-toggle]");
     const detailPanels = document.querySelectorAll(".mountain-detail");
 
+    function resetPanelVideos(panel) {
+      panel.querySelectorAll("video").forEach((video) => {
+        video.pause();
+        video.currentTime = 0;
+      });
+    }
+
     function openDetail(detail, button) {
       detailPanels.forEach((panel) => {
         if (panel !== detail) {
           panel.classList.remove("is-open");
           panel.hidden = true;
+          resetPanelVideos(panel);
         }
       });
 
@@ -231,6 +262,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     openPanel.classList.remove("is-open");
+    openPanel.querySelectorAll("video").forEach((video) => {
+      video.pause();
+      video.currentTime = 0;
+    });
     document.body.classList.remove("is-detail-open");
     document.querySelectorAll("[data-detail-toggle]").forEach((button) => {
       button.setAttribute("aria-expanded", "false");
