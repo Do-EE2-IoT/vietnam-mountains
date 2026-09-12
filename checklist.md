@@ -14,6 +14,12 @@
 
 - [x] Có đủ 5 núi: Fansipan, Yên Tử, Tà Chì Nhù, Ky Quan San, Lảo Thẩn.
 - [x] Mỗi núi có độ cao, vị trí, mô tả, độ khó, mùa đẹp, điểm nhấn.
+- [x] Nút “Khám phá” mở explore tab riêng giải thích vì sao từng núi đáng đến.
+- [x] Mỗi vùng chi tiết có chỗ đặt ảnh nổi bật.
+- [x] Mỗi vùng chi tiết có slot ghi vị trí video 10-30 giây để bổ sung sau.
+- [x] Vùng video trong explore tab đủ rộng và nổi bật.
+- [x] Nội dung khám phá đã mở rộng bằng thông tin tra cứu từ nguồn tham khảo.
+- [x] Có placeholder quote/review và ghi rõ chỉ thêm khi có nguồn xác minh.
 - [x] Có About Me: Nguyễn Văn Độ, Linux Software Developer.
 - [x] Có vùng `**************` để tự điền thông tin sau.
 - [x] Có vùng “Vì sao tôi chọn chủ đề này”.
@@ -27,10 +33,13 @@
 - [x] Active section indicator.
 - [x] Scroll progress.
 - [x] Mountain Selector.
+- [x] Explore tab cho nút “Khám phá”.
+- [x] Nút quay lại trong explore tab.
+- [x] Browser Back đóng explore tab.
 - [x] Altitude Comparison animation.
 - [x] Find Your Mountain quiz.
-- [x] Gallery lightbox.
-- [x] ESC đóng menu/lightbox.
+- [x] Đã bỏ section Gallery / Moments Above The Clouds.
+- [x] ESC đóng menu/explore tab.
 - [x] Hover/focus state.
 - [x] Reduced motion.
 - [x] Kiểm tra cú pháp JS bằng `node --check`.
@@ -44,7 +53,7 @@
 - [x] Có helper event `mountain_view`.
 - [x] Có helper event `quiz_start`.
 - [x] Có helper event `quiz_result`.
-- [x] Có helper event `gallery_open`.
+- [x] Có helper event `explore_detail_open`.
 - [x] Có helper event `cta_click`.
 - [x] Có scroll depth tracking 25/50/75/90.
 - [ ] Thay `G-XXXXXXXXXX` bằng Measurement ID thật khi có GA4.
@@ -63,6 +72,7 @@
 - [x] Kiểm tra danh sách file bằng `rg --files`.
 - [x] Kiểm tra JS bằng `node --check js/main.js` và `node --check js/analytics.js`.
 - [x] Kiểm tra không thiếu asset được tham chiếu trong `index.html`.
+- [x] Kiểm tra UI code không còn `Gallery`, `gallery`, `lightbox`, `MOMENTS`, `gallery_open`.
 - [x] Chạy local server bằng `python3 -m http.server 8000`.
 - [x] Kiểm tra HTTP 200 cho `/index.html`.
 - [x] Kiểm tra HTTP 200 cho ảnh hero WebP.

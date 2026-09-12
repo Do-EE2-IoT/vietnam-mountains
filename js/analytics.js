@@ -65,8 +65,8 @@
     trackQuizResult(mountainName) {
       trackEvent("quiz_result", { mountain_name: mountainName });
     },
-    trackGalleryOpen(mountainName) {
-      trackEvent("gallery_open", { mountain_name: mountainName });
+    trackExploreDetailOpen(mountainName) {
+      trackEvent("explore_detail_open", { mountain_name: mountainName });
     },
   };
 

@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape") {
         closeMenu();
-        closeLightbox();
+        closeActiveDetail();
       }
     });
   }
@@ -145,6 +145,102 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(chart);
   }
 
+  function setupMountainDetails() {
+    const detailButtons = document.querySelectorAll("[data-detail-toggle]");
+    const detailPanels = document.querySelectorAll(".mountain-detail");
+
+    function openDetail(detail, button) {
+      detailPanels.forEach((panel) => {
+        if (panel !== detail) {
+          panel.classList.remove("is-open");
+          panel.hidden = true;
+        }
+      });
+
+      detail.hidden = false;
+      requestAnimationFrame(() => {
+        detail.classList.add("is-open");
+      });
+      document.body.classList.add("is-detail-open");
+
+      detailButtons.forEach((item) => {
+        item.setAttribute("aria-expanded", String(item === button));
+      });
+
+      if (button && analytics.trackExploreDetailOpen) {
+        analytics.trackExploreDetailOpen(button.dataset.mountainLink);
+      }
+
+      if (window.location.hash !== `#${detail.id}`) {
+        window.history.pushState({ detailId: detail.id }, "", `#${detail.id}`);
+      }
+    }
+
+    function handleDetailRoute() {
+      const detailId = window.location.hash.slice(1);
+      const detail = detailId ? document.getElementById(detailId) : null;
+      const button = detail ? document.querySelector(`[data-detail-toggle="${detailId}"]`) : null;
+
+      if (detail && detail.classList.contains("mountain-detail")) {
+        openDetail(detail, button);
+      } else {
+        closeActiveDetail();
+      }
+    }
+
+    detailButtons.forEach((button) => {
+      const detail = document.getElementById(button.dataset.detailToggle);
+      if (!detail) {
+        return;
+      }
+
+      button.dataset.defaultLabel = button.textContent;
+      button.setAttribute("aria-controls", detail.id);
+      button.setAttribute("aria-expanded", "false");
+
+      button.addEventListener("click", () => {
+        openDetail(detail, button);
+      });
+    });
+
+    document.querySelectorAll("[data-detail-back]").forEach((button) => {
+      button.addEventListener("click", () => {
+        if (window.history.length > 1 && window.location.hash.endsWith("-details")) {
+          window.history.back();
+        } else {
+          closeActiveDetail();
+        }
+      });
+    });
+
+    window.addEventListener("hashchange", handleDetailRoute);
+    window.addEventListener("popstate", handleDetailRoute);
+
+    const initialDetail = document.getElementById(window.location.hash.slice(1));
+    if (initialDetail && initialDetail.classList.contains("mountain-detail")) {
+      const button = document.querySelector(`[data-detail-toggle="${initialDetail.id}"]`);
+      openDetail(initialDetail, button);
+    }
+  }
+
+  function closeActiveDetail() {
+    const openPanel = document.querySelector(".mountain-detail.is-open");
+    if (!openPanel) {
+      document.body.classList.remove("is-detail-open");
+      return;
+    }
+
+    openPanel.classList.remove("is-open");
+    document.body.classList.remove("is-detail-open");
+    document.querySelectorAll("[data-detail-toggle]").forEach((button) => {
+      button.setAttribute("aria-expanded", "false");
+    });
+
+    window.setTimeout(() => {
+      openPanel.hidden = true;
+    }, 320);
+  }
+
   function setupQuiz() {
     const quiz = document.querySelector("[data-quiz]");
     const result = document.querySelector("[data-quiz-result]");
@@ -222,52 +318,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const lightbox = document.querySelector("[data-lightbox]");
-  const lightboxImage = document.querySelector("[data-lightbox-image]");
-
-  function closeLightbox() {
-    if (!lightbox || !lightboxImage) {
-      return;
-    }
-
-    lightbox.hidden = true;
-    lightboxImage.src = "";
-    lightboxImage.alt = "";
-  }
-
-  function setupGallery() {
-    if (!lightbox || !lightboxImage) {
-      return;
-    }
-
-    document.querySelectorAll("[data-gallery]").forEach((button) => {
-      button.addEventListener("click", () => {
-        const image = button.querySelector("img");
-        lightboxImage.src = button.dataset.src;
-        lightboxImage.alt = image ? image.alt : "Ảnh gallery";
-        lightbox.hidden = false;
-
-        if (analytics.trackGalleryOpen) {
-          analytics.trackGalleryOpen(button.dataset.gallery);
-        }
-      });
-    });
-
-    document.querySelector("[data-lightbox-close]").addEventListener("click", closeLightbox);
-    lightbox.addEventListener("click", (event) => {
-      if (event.target === lightbox) {
-        closeLightbox();
-      }
-    });
-  }
-
   setupNavigation();
   setupRevealObserver();
   setupSectionObserver();
   setupMountainSelector();
   setupAltitudeAnimation();
+  setupMountainDetails();
   setupQuiz();
-  setupGallery();
   updateScrollState();
 
   window.addEventListener("scroll", updateScrollState, { passive: true });

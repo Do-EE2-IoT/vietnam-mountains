@@ -116,7 +116,7 @@ Thông điệp:
 - Biển mây.
 - Hoa Chi Pâu.
 - Cảm giác hoang sơ.
-- Rất phù hợp với gallery ảnh.
+- Rất phù hợp với explore tab có ảnh/video nổi bật.
 - Có thể dùng tông tím làm màu accent riêng cho section.
 
 Tag gợi ý:
@@ -394,7 +394,7 @@ Thứ tự:
 05 Top 5 Mountain Stories
 06 Altitude Comparison
 07 Find Your Mountain
-08 Mountain Gallery
+08 Explore Detail Tabs
 09 Journey / Quote Section
 10 About Me
 11 Footer
@@ -409,7 +409,7 @@ Navigation luôn nằm trên cùng.
 Desktop:
 
 ```text
-LOGO     Khám phá   Top 5   So sánh   Chọn đỉnh núi   Gallery   About me   [BẮT ĐẦU]
+LOGO     Khám phá   Top 5   So sánh   Chọn đỉnh núi   About me   [BẮT ĐẦU]
 ```
 
 Mobile:
@@ -628,6 +628,79 @@ Signature experience
 [KHÁM PHÁ]
 ```
 
+Yêu cầu quan trọng:
+
+> Nút **[KHÁM PHÁ]** không được chỉ trỏ về chính section rồi không có thay đổi rõ ràng.
+
+Khi người dùng nhấn **[KHÁM PHÁ]**, website cần chuyển sang một **tab / view chi tiết riêng** cho ngọn núi đó, có hiệu ứng chuyển cảnh rõ ràng và có nút quay lại.
+
+Vùng chi tiết phải trả lời được:
+
+```text
+Tại sao địa điểm này đáng để đến?
+Cảnh / trải nghiệm đặc trưng nhất là gì?
+Nên xem ảnh nào?
+Sau này video 10-30 giây sẽ đặt ở đâu?
+Có quote / review nổi bật nào không?
+```
+
+Gợi ý cấu trúc:
+
+```text
+[KHÁM PHÁ]
+
+EXPLORE TAB:
+
+VÌ SAO ĐÁNG ĐẾN?
+Headline ngắn, giàu cảm xúc nhưng có thông tin.
+
+Mô tả 1-2 đoạn:
+- Điểm đặc trưng nhất.
+- Lý do khác biệt với các núi còn lại.
+- Trải nghiệm khiến người xem muốn đến.
+
+3 bullet nổi bật:
+- Cảnh đẹp nhất.
+- Trải nghiệm đặc trưng.
+- Gợi ý ảnh / video nên dùng.
+
+Image slot:
+assets/images/<mountain>/<mountain>-02.webp
+
+Video slot:
+assets/videos/<mountain>-highlight.mp4
+```
+
+Yêu cầu UX:
+
+- Explore tab nên chiếm gần như toàn màn hình để người dùng cảm giác đang bước sang một lớp nội dung khác.
+- Có hiệu ứng chuyển cảnh nhẹ: fade/slide/scale rất nhỏ.
+- Có nút **Quay lại hành trình**.
+- Browser Back cũng phải đóng được tab chi tiết.
+- Không cần nút phóng to / thu nhỏ video.
+- Vùng video phải đủ rộng, nổi bật, ưu tiên hiển thị như một khung hero media.
+- Section gallery riêng **không bắt buộc**; ảnh nổi bật nên được đưa vào từng explore tab.
+
+Quy tắc nội dung:
+
+- Không viết chung chung kiểu “rất đẹp, rất nổi tiếng”.
+- Phải nói rõ **đáng đến vì điều gì**.
+- Nên có thông tin cụ thể: cảnh quan, trải nghiệm, cảm giác, đối tượng phù hợp.
+- Nếu dùng quote/comment của người nổi tiếng hoặc reviewer, phải có nguồn xác minh.
+- Không tự bịa quote. Nếu chưa có nguồn, để placeholder:
+
+```text
+Quote/review nổi bật: ************** — chỉ thêm khi có nguồn xác minh.
+```
+
+Gợi ý video:
+
+- Mỗi núi có thể có 1 video ngắn 10-30 giây.
+- Video không bắt buộc ở bản đầu tiên.
+- Nên để sẵn vị trí trong UI để sau này thay vào.
+- Không autoplay có tiếng.
+- Nếu autoplay, phải `muted`, `playsinline`, và có fallback image.
+
 ---
 
 # 20. Nội dung chi tiết cần có cho từng núi
@@ -750,7 +823,7 @@ Headline:
 
 > **NƠI NHỮNG SƯỜN NÚI NỞ HOA TRÊN BIỂN MÂY**
 
-Gallery có thể gồm:
+Explore tab có thể gồm:
 
 1. Cloud sea.
 2. Ridge.
@@ -923,36 +996,37 @@ Không cần server.
 
 ---
 
-# 28. SECTION 08 — Gallery
+# 28. SECTION 08 — Explore Detail Tabs
 
-Title:
+Section Gallery riêng được bỏ để website tập trung hơn vào hành trình khám phá từng núi.
 
-> **MOMENTS ABOVE THE CLOUDS**
+Thay vào đó, mỗi nút **[KHÁM PHÁ]** trong phần Top 5 mở một explore tab chi tiết.
 
-Layout:
-
-> CSS Masonry / Editorial Grid
-
-Không dùng carousel cho tất cả ảnh.
-
-Ví dụ:
+Mỗi explore tab cần có:
 
 ```text
-┌───────────────┬───────┐
-│               │       │
-│    IMAGE      │ IMAGE │
-│               ├───────┤
-│               │ IMAGE │
-├───────┬───────┴───────┤
-│ IMAGE │     IMAGE      │
-└───────┴───────────────┘
+Back button
+Tên núi
+Headline: tại sao đáng để đến
+Mô tả chi tiết hơn dựa trên nguồn tham khảo
+3-4 điểm nổi bật
+Ảnh chi tiết
+Video slot lớn 10-30 giây
+Nguồn tham khảo
+Quote/review placeholder nếu chưa có nguồn xác minh
 ```
 
-Click ảnh:
+Video slot:
 
-> mở lightbox.
+```text
+assets/videos/fansipan-highlight.mp4
+assets/videos/yen-tu-highlight.mp4
+assets/videos/ta-chi-nhu-highlight.mp4
+assets/videos/ky-quan-san-highlight.mp4
+assets/videos/lao-than-highlight.mp4
+```
 
-Có thể code lightbox đơn giản bằng JS.
+Video chưa bắt buộc ở bản đầu tiên, nhưng UI phải để sẵn vị trí rộng và nổi bật.
 
 ---
 
@@ -1459,7 +1533,7 @@ Ví dụ:
 - Camp.
 - Trail.
 
-Nhờ vậy gallery có nhịp thị giác tốt hơn.
+Nhờ vậy các explore tab có nhịp thị giác tốt hơn.
 
 ---
 *** Từ bước 40 sau khi đã có hoàn chỉnh web, tôi sẽ tự implement và ứng dụng GA***
@@ -1556,10 +1630,10 @@ gtag('event', 'quiz_result', {
 
 ---
 
-## Event 4 — Gallery image
+## Event 4 — Explore detail
 
 ```javascript
-gtag('event', 'gallery_open', {
+gtag('event', 'explore_detail_open', {
   mountain_name: 'ta_chi_nhu'
 });
 ```
@@ -1623,7 +1697,7 @@ page_view
 mountain_view
 quiz_start
 quiz_result
-gallery_open
+explore_detail_open
 scroll_depth
 cta_click
 ```
@@ -1787,7 +1861,7 @@ intersection reveal
 altitude animation
 mountain selector
 quiz logic
-gallery lightbox
+explore detail tabs
 scroll progress
 ```
 
@@ -1983,7 +2057,7 @@ Page views
 Scroll
 Mountain interest
 Quiz engagement
-Gallery engagement
+Explore detail engagement
 CTA clicks
 ```
 
@@ -2033,7 +2107,7 @@ Ví dụ:
 - [ ] Altitude comparison.
 - [ ] Selector.
 - [ ] Quiz.
-- [ ] Gallery.
+- [ ] Explore detail tabs.
 - [ ] Scroll progress.
 
 ## GA
@@ -2044,7 +2118,7 @@ Ví dụ:
 - [ ] `mountain_view`.
 - [ ] `quiz_start`.
 - [ ] `quiz_result`.
-- [ ] `gallery_open`.
+- [ ] `explore_detail_open`.
 - [ ] `cta_click`.
 - [ ] `scroll_depth`.
 
@@ -2075,7 +2149,9 @@ Khi giao README này cho Codex, website chỉ được coi là hoàn thành khi:
 - Selector hoạt động.
 - Quiz hoạt động.
 - Altitude animation hoạt động.
-- Gallery lightbox hoạt động.
+- Explore detail tabs hoạt động.
+- Nút back và browser Back đóng được tab chi tiết.
+- Video slot lớn hiển thị rõ trong tab chi tiết.
 - Scroll progress hoạt động.
 
 ## Analytics
@@ -2122,7 +2198,7 @@ Yêu cầu kỹ thuật:
 - Chú trọng accessibility.
 - Animation sử dụng CSS và IntersectionObserver.
 - Tạo đầy đủ Mountain Selector, Altitude Comparison, Find Your Mountain Quiz,
-  Gallery Lightbox và Scroll Progress.
+  Explore Detail Tabs và Scroll Progress.
 - Tạo file analytics.js có cấu trúc sẵn cho GA4 và các custom events trong README.
 - Nếu chưa có ảnh, dùng đúng tên placeholder trong README, không tự thay đổi tên file.
 - Không dùng ảnh hotlink.

@@ -104,6 +104,23 @@
     height: 52vh;
   }
 
+  .mountain-detail {
+    padding-top: 22px;
+  }
+
+  .mountain-detail__hero,
+  .mountain-detail__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mountain-detail__hero {
+    min-height: auto;
+  }
+
+  .video-slot--large {
+    min-height: 360px;
+  }
+
   .altitude__chart {
     height: auto;
     grid-template-columns: 1fr;
@@ -183,15 +200,12 @@
     gap: 4px;
   }
 
-  .gallery__grid {
-    grid-template-columns: 1fr;
-    grid-auto-rows: 230px;
+  .detail-image img {
+    height: 260px;
   }
 
-  .gallery__item--large,
-  .gallery__item--wide {
-    grid-column: auto;
-    grid-row: auto;
+  .video-slot--large {
+    min-height: 300px;
   }
 
   .about__profile {

@@ -22,7 +22,7 @@
   - 5 Mountain Stories
   - Altitude Comparison
   - Find Your Mountain Quiz
-  - Gallery + Lightbox
+  - Explore Detail Tabs
   - Closing Journey
   - About Me
   - Footer
@@ -41,3 +41,44 @@
   - server log ghi nhận HTML, CSS, JS, favicon và ảnh chính được tải thành công
 - Chưa thể kiểm tra bằng browser tự động vì môi trường không có Chromium/Firefox/Playwright.
 - Local server đang chạy tại `http://127.0.0.1:8000/`.
+
+## Cập nhật theo feedback nút “Khám phá”
+
+- Đã bổ sung vào `readme.md` yêu cầu: nút **Khám phá** phải mở vùng chi tiết, không được chỉ trỏ về chính section.
+- Đã thêm detail panel cho từng núi trong `index.html`.
+- Mỗi detail panel hiện có:
+  - phần “Vì sao đáng đến?”
+  - mô tả trải nghiệm đặc trưng
+  - 3 bullet thông tin nổi bật
+  - ảnh chi tiết / vị trí ảnh
+  - slot video 10-30 giây để thêm sau
+  - placeholder quote/review, kèm ghi chú chỉ thêm khi có nguồn xác minh
+- Đã thêm CSS cho detail panel và responsive mobile.
+- Đã thêm JS để nút “Khám phá” mở/đóng panel, cập nhật `aria-expanded` và scroll tới vùng chi tiết.
+- Đã kiểm tra lại:
+  - `node --check js/main.js`
+  - `node --check js/analytics.js`
+  - local server vẫn trả HTTP 200
+  - các asset thật trong `src/href` đều tồn tại
+- Các đường dẫn `assets/videos/...mp4` hiện chỉ là slot nội dung để thêm video sau, chưa phải file bắt buộc ở bản này.
+
+## Cập nhật theo feedback bỏ Gallery và nâng cấp tab Khám phá
+
+- Đã bỏ section **Gallery / Moments Above The Clouds** khỏi navigation và `index.html`.
+- Đã chuyển nút **Khám phá** sang mở một explore tab riêng dạng overlay toàn màn hình.
+- Explore tab có hiệu ứng chuyển cảnh nhẹ, nút **Quay lại hành trình**, hỗ trợ browser Back và ESC.
+- Vùng video trong explore tab đã được làm lớn và nổi bật, không còn cơ chế phóng to / thu nhỏ.
+- Đã tra thông tin và mở rộng nội dung đặc biệt cho từng núi:
+  - Fansipan: Nóc nhà Đông Dương, Hoàng Liên Sơn, cáp treo Fansipan Legend.
+  - Yên Tử: Chùa Đồng 1.068 m, Thiền phái Trúc Lâm, di sản UNESCO 2025.
+  - Tà Chì Nhù: đỉnh 2.979 m, nóc nhà Trạm Tấu/Yên Bái, hoa Chi Pâu, mùa săn mây.
+  - Ky Quan San: 3.046 m, Bạch Mộc Lương Tử, bình minh Núi Muối, cung trekking thử thách.
+  - Lảo Thẩn: nóc nhà Y Tý, khoảng 2.860-2.862 m, cung vừa sức cho săn mây/camping.
+- Đã thêm nguồn tham khảo trực tiếp trong từng explore tab.
+- Đã cập nhật GA helper từ `gallery_open` sang `explore_detail_open`.
+- Đã kiểm tra lại sau thay đổi:
+  - `node --check js/main.js`
+  - `node --check js/analytics.js`
+  - không còn `Gallery`, `gallery`, `lightbox`, `MOMENTS`, `gallery_open` trong UI code
+  - các asset thật trong `src/href` đều tồn tại
+  - local server vẫn trả HTTP 200
