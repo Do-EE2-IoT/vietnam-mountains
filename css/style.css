@@ -416,23 +416,12 @@ button.button {
   letter-spacing: 0.1em;
 }
 
-.scroll-cue {
-  position: absolute;
-  left: clamp(20px, 5vw, 70px);
-  bottom: 40px;
-  z-index: 2;
-  color: var(--text-muted);
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  writing-mode: vertical-rl;
-}
-
 .intro {
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 34%),
-    var(--band-b);
+    linear-gradient(180deg, rgba(156, 32, 7, 0.72), rgba(77, 18, 7, 0.82)),
+    linear-gradient(90deg, rgba(30, 69, 45, 0.46), rgba(156, 32, 7, 0.32)),
+    url("../assets/images/hero/hero-2.jpg") center / cover;
+  background-attachment: fixed;
 }
 
 .intro__grid {
@@ -745,18 +734,11 @@ body.is-detail-open {
   box-shadow: var(--shadow);
 }
 
-.detail-image figcaption,
-.source-note {
+.detail-image figcaption {
   margin-top: 12px;
   color: var(--text-muted);
   font-size: 0.9rem;
   line-height: 1.55;
-}
-
-.source-note a {
-  color: var(--accent-gold);
-  text-decoration: underline;
-  text-underline-offset: 3px;
 }
 
 .mountain-detail__copy h3 {
@@ -821,7 +803,7 @@ body.is-detail-open {
   border-style: solid;
   background:
     linear-gradient(0deg, rgba(116, 24, 7, 0.68), rgba(156, 32, 7, 0.18)),
-    url("../assets/images/hero/fansipan-hero.webp") center / cover;
+    url("../assets/images/hero/hero.jpg") center / cover;
   color: var(--cloud-white);
   text-align: left;
   overflow: hidden;
@@ -870,8 +852,10 @@ body.is-detail-open {
 
 .altitude {
   background:
-    linear-gradient(180deg, rgba(240, 201, 108, 0.12), rgba(0, 0, 0, 0.1)),
-    var(--band-d);
+    linear-gradient(180deg, rgba(156, 32, 7, 0.76), rgba(87, 20, 7, 0.86)),
+    linear-gradient(90deg, rgba(30, 69, 45, 0.44), rgba(156, 32, 7, 0.26)),
+    url("../assets/images/hero/hero-3.jpg") center / cover;
+  background-attachment: fixed;
 }
 
 .altitude__stage {

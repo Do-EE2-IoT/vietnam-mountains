@@ -74,7 +74,7 @@
   - Tà Chì Nhù: đỉnh 2.979 m, nóc nhà Trạm Tấu/Yên Bái, hoa Chi Pâu, mùa săn mây.
   - Ky Quan San: 3.046 m, Bạch Mộc Lương Tử, bình minh Núi Muối, cung trekking thử thách.
   - Lảo Thẩn: nóc nhà Y Tý, khoảng 2.860-2.862 m, cung vừa sức cho săn mây/camping.
-- Đã thêm nguồn tham khảo trực tiếp trong từng explore tab.
+- Đã bỏ phần nguồn tham khảo trực tiếp và quote/review placeholder khỏi explore tab để UI gọn hơn.
 - Đã cập nhật GA helper từ `gallery_open` sang `explore_detail_open`.
 - Đã kiểm tra lại sau thay đổi:
   - `node --check js/main.js`
@@ -128,7 +128,7 @@
 ## Cập nhật hiển thị đường dẫn ảnh
 
 - Đã thêm label đường dẫn ảnh trực tiếp trên các vùng ảnh chính:
-  - Hero: `assets/images/hero/fansipan-hero.webp`
+  - Hero: `assets/images/hero/hero.jpg`
   - Fansipan story: `assets/images/fansipan/fansipan-01.jpg`
   - Yên Tử story: `assets/images/yen-tu/yen-tu-01.webp`
   - Tà Chì Nhù story: `assets/images/ta-chi-nhu/ta-chi-nhu-01.webp`
@@ -184,6 +184,20 @@
 - Video cũng được reset `currentTime = 0` để lần mở sau phát lại từ đầu.
 - Khi chuyển từ explore tab này sang tab khác, video ở tab cũ cũng tự dừng và về đầu.
 
+## Cập nhật video Yên Tử
+
+- Đã nhúng video Yên Tử vào explore tab:
+  - `assets/videos/yen-tu.mp4`
+- Video slot vẫn hiển thị rõ đường dẫn `assets/videos/yen-tu.mp4` trong UI.
+- Video dùng cùng cơ chế reset khi back/đóng tab như Fansipan.
+
+## Cập nhật ảnh hero
+
+- Đã đổi ảnh hero sang JPG thật:
+  - `assets/images/hero/hero.jpg`
+- Đã cập nhật `og:image`, ảnh hero trong HTML và label đường dẫn trên hero.
+- Đã cập nhật background fallback của video slot sang `assets/images/hero/hero.jpg`.
+
 ## Cập nhật heading bị gãy dòng xấu
 
 - Đã thêm class `.section-title--compact` cho các tiêu đề ngắn:
@@ -202,3 +216,21 @@
 - Hover vào núi có hiệu ứng nâng nhẹ và highlight.
 - Animation dùng CSS + JavaScript thuần, không thêm thư viện.
 - Responsive mobile cho phép cuộn ngang nhẹ để giữ hình núi không bị bóp méo.
+
+## Cập nhật ảnh JPG và video thật
+
+- Đã rà soát các file JPG/MP4 mới trong `assets/images` và `assets/videos`.
+- Đã thay toàn bộ ảnh chi tiết trong explore tab từ WebP sang JPG thật:
+  - `assets/images/fansipan/fansipan-02.jpg`
+  - `assets/images/yen-tu/yen-tu-02.jpg`
+  - `assets/images/ta-chi-nhu/ta-chi-nhu-02.jpg`
+  - `assets/images/ky-quan-san/ky-quan-san-02.jpg`
+  - `assets/images/lao-than/lao-than-02.jpg`
+- Đã nhúng đủ video thật cho 5 explore tab:
+  - `assets/videos/fansipan.mp4`
+  - `assets/videos/yen-tu.mp4`
+  - `assets/videos/ta-chi-nhu.mp4`
+  - `assets/videos/ky-quan-san.mp4`
+  - `assets/videos/lao-than.mp4`
+- Không còn đường dẫn video placeholder dạng `*-highlight.mp4` trong `index.html`.
+- Đã kiểm tra `node --check js/main.js`, `node --check js/analytics.js` và kiểm tra các asset HTML/CSS đang tham chiếu đều tồn tại.

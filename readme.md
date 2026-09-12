@@ -694,12 +694,7 @@ Quy tắc nội dung:
 - Không viết chung chung kiểu “rất đẹp, rất nổi tiếng”.
 - Phải nói rõ **đáng đến vì điều gì**.
 - Nên có thông tin cụ thể: cảnh quan, trải nghiệm, cảm giác, đối tượng phù hợp.
-- Nếu dùng quote/comment của người nổi tiếng hoặc reviewer, phải có nguồn xác minh.
-- Không tự bịa quote. Nếu chưa có nguồn, để placeholder:
-
-```text
-Quote/review nổi bật: ************** — chỉ thêm khi có nguồn xác minh.
-```
+- Không hiển thị quote/review placeholder hoặc nguồn tham khảo trong UI.
 
 Gợi ý video:
 
@@ -1016,12 +1011,10 @@ Mỗi explore tab cần có:
 Back button
 Tên núi
 Headline: tại sao đáng để đến
-Mô tả chi tiết hơn dựa trên nguồn tham khảo
+Mô tả chi tiết hơn, có thông tin chọn lọc và dễ đọc
 3-4 điểm nổi bật
 Ảnh chi tiết
 Video slot lớn 10-30 giây
-Nguồn tham khảo
-Quote/review placeholder nếu chưa có nguồn xác minh
 ```
 
 Video slot:

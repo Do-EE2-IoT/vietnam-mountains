@@ -74,13 +74,14 @@
     bottom: 86px;
   }
 
-  .scroll-cue {
-    display: none;
-  }
-
   .intro__grid,
   .about__grid {
     grid-template-columns: 1fr;
+  }
+
+  .intro,
+  .altitude {
+    background-attachment: scroll;
   }
 
   .selector__results {

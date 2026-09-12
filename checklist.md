@@ -25,6 +25,7 @@
 - [x] Mỗi vùng chi tiết có chỗ đặt ảnh nổi bật.
 - [x] Các vùng ảnh chính hiển thị rõ đường dẫn file ảnh để thay thế sau.
 - [x] Các ảnh section chính đã dùng JPG thật nếu file JPG đã có.
+- [x] Hero đã dùng JPG thật `assets/images/hero/hero.jpg`.
 - [x] Mỗi vùng chi tiết có slot ghi vị trí video 10-30 giây để bổ sung sau.
 - [x] Vùng video trong explore tab đủ rộng và nổi bật.
 - [x] Nội dung khám phá đã mở rộng bằng thông tin tra cứu từ nguồn tham khảo.
