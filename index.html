@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top 5 đỉnh núi đẹp nhất Việt Nam | Vietnam Above The Clouds</title>
+    <meta
+      name="description"
+      content="Khám phá Fansipan, Yên Tử, Tà Chì Nhù, Ky Quan San và Lảo Thẩn qua một hành trình tương tác trên những đỉnh núi đẹp của Việt Nam."
+    />
+    <meta property="og:title" content="Vietnam Above The Clouds" />
+    <meta
+      property="og:description"
+      content="Hành trình qua 5 đỉnh núi biểu tượng của Việt Nam với selector, quiz, explore tab chi tiết và biểu đồ độ cao tương tác."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/hero/hero.jpg" />
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Google tag (gtag.js) - replace G-XXXXXXXXXX with your real Measurement ID. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXXXXX");
+    </script>
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true">
+      <span class="scroll-progress__bar"></span>
+    </div>
+
+    <header class="site-header" data-header>
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a class="nav__logo" href="#hero" data-track-cta="logo">
+          <span>Vietnam</span>
+          <strong>Above Clouds</strong>
+        </a>
+        <button class="nav__toggle" type="button" aria-label="Mở menu" aria-expanded="false" data-menu-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav__links" data-menu>
+          <a href="#intro">Khám phá</a>
+          <a href="#top5">Top 5</a>
+          <a href="#altitude">So sánh</a>
+          <a href="#quiz">Chọn đỉnh núi</a>
+          <a href="#about">About me</a>
+          <a class="button button--small" href="#top5" data-track-cta="start_journey">Bắt đầu</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-observed" id="hero" data-theme="fansipan">
+        <img
+          class="hero__image"
+          src="assets/images/hero/hero.jpg"
+          alt="Biển mây và dãy núi Fansipan trong ánh sáng bình minh"
+          fetchpriority="high"
+        />
+        <span class="image-path image-path--hero">Ảnh hero: assets/images/hero/hero.jpg</span>
+        <div class="hero__cloud hero__cloud--back"></div>
+        <div class="hero__cloud hero__cloud--front"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content reveal">
+          <p class="eyebrow">5 đỉnh núi đáng chinh phục nhất Việt Nam</p>
+          <h1>Vietnam Above<br />The Clouds</h1>
+          <p class="hero__lead">“5 đỉnh núi, 5 tính cách, 1 hành trình chạm mây.”</p>
+          <p class="hero__copy">
+            Khám phá những cung đường nơi thiên nhiên, văn hóa và thử thách gặp nhau trên các đỉnh núi biểu tượng của Việt Nam.
+          </p>
+          <div class="hero__actions">
+            <a class="button" href="#top5" data-track-cta="explore_peaks">Khám phá 5 đỉnh núi</a>
+            <a class="button button--ghost" href="#altitude" data-track-cta="view_journey">Xem hành trình</a>
+          </div>
+        </div>
+        <aside class="hero__stat" aria-label="Thông tin Fansipan">
+          <strong>3143 m</strong>
+          <span>Fansipan</span>
+          <small>Nóc nhà Đông Dương</small>
+        </aside>
+      </section>
+
+      <section class="intro section section-observed" id="intro">
+        <div class="section__inner intro__grid">
+          <div class="reveal">
+            <p class="eyebrow">Không chỉ là xếp hạng</p>
+            <h2>Không có một cách duy nhất để chinh phục một ngọn núi.</h2>
+          </div>
+          <div class="intro__copy reveal">
+            <p>Có người tìm kiếm đỉnh cao. Có người tìm biển mây. Có người đi tìm lịch sử. Có người chỉ muốn nhìn thấy bình minh phía trên những đám mây.</p>
+            <dl class="intro__metrics">
+              <div><dt>5</dt><dd>Peaks</dd></div>
+              <div><dt>3</dt><dd>Vùng trải nghiệm</dd></div>
+              <div><dt>∞</dt><dd>Khoảnh khắc</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="selector section section-observed" id="selector">
+        <div class="section__inner">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Mountain selector</p>
+            <h2 class="section-title--compact">Bạn đang tìm kiếm điều gì?</h2>
+          </div>
+          <div class="selector__controls reveal" role="group" aria-label="Chọn trải nghiệm núi">
+            <button type="button" class="selector__button is-active" data-filter="cloud">Biển mây</button>
+            <button type="button" class="selector__button" data-filter="challenge">Thử thách</button>
+            <button type="button" class="selector__button" data-filter="culture">Tâm linh</button>
+            <button type="button" class="selector__button" data-filter="beginner">Người mới</button>
+          </div>
+          <div class="selector__results" data-selector-results>
+            <article class="selector-card" data-tags="challenge iconic" data-mountain-card="fansipan">
+              <span>3143 m</span>
+              <h3>Fansipan</h3>
+              <p>Biểu tượng cao nhất, phù hợp cả trekking lẫn du lịch cáp treo.</p>
+            </article>
+            <article class="selector-card" data-tags="culture" data-mountain-card="yen-tu">
+              <span>1068 m</span>
+              <h3>Yên Tử</h3>
+              <p>Không gian văn hóa, lịch sử và tâm linh giữa rừng núi.</p>
+            </article>
+            <article class="selector-card is-highlighted" data-tags="cloud photography" data-mountain-card="ta-chi-nhu">
+              <span>2979 m</span>
+              <h3>Tà Chì Nhù</h3>
+              <p>Biển mây, hoa Chi Pâu và những sườn núi giàu chất thơ.</p>
+            </article>
+            <article class="selector-card" data-tags="challenge trekking" data-mountain-card="ky-quan-san">
+              <span>3046 m</span>
+              <h3>Ky Quan San</h3>
+              <p>Cung đường cho người muốn thử sức với rừng sâu và bình minh Núi Muối.</p>
+            </article>
+            <article class="selector-card is-highlighted" data-tags="cloud beginner camping" data-mountain-card="lao-than">
+              <span>2860 m</span>
+              <h3>Lảo Thẩn</h3>
+              <p>Cánh cửa thân thiện để bắt đầu trekking, cắm trại và săn mây.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="stories section-observed" id="top5" aria-label="Top 5 đỉnh núi">
+        <article class="mountain-story section-observed" id="fansipan" data-theme="fansipan" data-mountain="fansipan">
+          <figure class="mountain-story__media reveal">
+            <img src="assets/images/fansipan/fansipan-01.jpg" alt="Cột cờ và biển mây trên đỉnh Fansipan" loading="lazy" />
+            <figcaption>Ảnh section: assets/images/fansipan/fansipan-01.jpg</figcaption>
+          </figure>
+          <div class="mountain-story__content reveal">
+            <span class="mountain-story__index">01</span>
+            <h2>Fansipan</h2>
+            <p class="mountain-story__height">3.143 m</p>
+            <h3>Nóc nhà Đông Dương</h3>
+            <p>Một biểu tượng vượt khỏi khái niệm trekking. Fansipan là nơi núi, mây và rừng Hoàng Liên Sơn hội tụ trên nóc nhà Đông Dương.</p>
+            <dl class="data-list">
+              <div><dt>Vị trí</dt><dd>Sa Pa / Hoàng Liên Sơn</dd></div>
+              <div><dt>Phong cách</dt><dd>Iconic Adventure</dd></div>
+              <div><dt>Độ khó</dt><dd>Trung bình đến khó</dd></div>
+              <div><dt>Mùa đẹp</dt><dd>Tháng 10 đến tháng 4</dd></div>
+              <div><dt>Điểm nhấn</dt><dd>Trekking / Cáp treo / Biển mây</dd></div>
+            </dl>
+            <button class="button button--story" type="button" data-detail-toggle="fansipan-details" data-mountain-link="fansipan">Khám phá</button>
+          </div>
+          <div class="mountain-detail" id="fansipan-details" hidden>
+            <button class="detail-back" type="button" data-detail-back>← Quay lại hành trình</button>
+            <div class="mountain-detail__hero">
+              <div>
+                <p class="eyebrow">Explore tab / Fansipan</p>
+                <h2>Fansipan đáng đến vì đây là cột mốc cao nhất của Việt Nam và của cả Đông Dương</h2>
+                <p>Không chỉ là một đỉnh núi để check-in, Fansipan tạo ra cảm giác rất rõ về độ cao: dãy Hoàng Liên Sơn mở rộng dưới chân, mây chạy qua thung lũng Sa Pa, và khu vực đỉnh có cả trải nghiệm trekking lẫn cáp treo cho nhiều nhóm du khách khác nhau.</p>
+              </div>
+              <div class="video-slot video-slot--large">
+                <video src="assets/videos/fansipan.mp4" muted loop playsinline controls preload="metadata"></video>
+              </div>
+            </div>
+            <div class="mountain-detail__grid">
+              <figure class="detail-image">
+                <img src="assets/images/fansipan/fansipan-02.jpg" alt="Gợi ý ảnh chi tiết Fansipan: biển mây và cột mốc đỉnh" loading="lazy" />
+                <figcaption>Ảnh chi tiết: `assets/images/fansipan/fansipan-02.jpg`</figcaption>
+              </figure>
+              <div class="mountain-detail__copy">
+                <h3>Điểm thật sự đặc biệt</h3>
+                <p>Fansipan nằm trong dãy Hoàng Liên Sơn, thường được gọi là “Nóc nhà Đông Dương” với độ cao phổ biến 3.143 m. Điểm thú vị để kể trong website là sự đối lập giữa hai cách tiếp cận: trekker có thể xem đây là hành trình thể lực, còn du khách phổ thông vẫn có thể lên gần đỉnh bằng hệ thống cáp treo.</p>
+                <p>Sun World giới thiệu tuyến cáp treo Fansipan Legend là hệ thống ba dây từng được ghi nhận kỷ lục Guinness, tạo nên một trải nghiệm rất điện ảnh: cabin vượt thung lũng, rừng núi và mây trước khi lên vùng đỉnh.</p>
+                <p>Một chi tiết thú vị là Fansipan từng được biết đến với độ cao 3.143 m trong thời gian dài, còn các phép đo hiện đại năm 2019 xác định lại độ cao khoảng 3.147,3 m. Điều này rất hợp để kể như một “fact” nhỏ: ngay cả một đỉnh núi quen thuộc cũng có những lớp thông tin mới khi được đo đạc bằng công nghệ hiện đại.</p>
+                <p>Fansipan cũng không đứng một mình. Nó nằm trong không gian Hoàng Liên Sơn và Vườn quốc gia Hoàng Liên, nơi có hệ sinh thái núi cao, khí hậu lạnh, rừng, hoa, mây và những ngày mùa đông có thể xuất hiện băng tuyết. Vì vậy trải nghiệm Fansipan không chỉ là lên một cột mốc, mà là bước vào một vùng núi cao rất khác với hình dung nhiệt đới quen thuộc về Việt Nam.</p>
+                <ul class="highlight-list">
+                  <li>Biểu tượng rõ nhất cho ý tưởng “chạm mây” của toàn website.</li>
+                  <li>Đáng đến vì có cả câu chuyện chinh phục lẫn trải nghiệm ngắm cảnh quy mô lớn.</li>
+                  <li>Tên Fansipan / Phan Xi Păng thường được giải thích gắn với “Hủa Xi Pan”, gần nghĩa “phiến đá khổng lồ chênh vênh”.</li>
+                  <li>Câu chuyện đẹp: từ hành trình trekking nhiều ngày qua rừng Hoàng Liên đến trải nghiệm cáp treo mở ra đỉnh núi cho nhiều nhóm du khách hơn.</li>
+                  <li>Shot video nên ưu tiên chuyển động từ thấp lên cao để tạo cảm giác đang leo lên bầu trời.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="mountain-story mountain-story--reverse section-observed" id="yen-tu" data-theme="yen-tu" data-mountain="yen_tu">
+          <figure class="mountain-story__media reveal">
+            <img src="assets/images/yen-tu/yen-tu-01.jpg" alt="Rừng núi Yên Tử với không gian chùa và mây" loading="lazy" />
+            <figcaption>Ảnh section: assets/images/yen-tu/yen-tu-01.jpg</figcaption>
+          </figure>
+          <div class="mountain-story__content reveal">
+            <span class="mountain-story__index">02</span>
+            <h2>Yên Tử</h2>
+            <p class="mountain-story__height">1.068 m</p>
+            <h3>Có những đỉnh núi để chiêm nghiệm</h3>
+            <p>Yên Tử tạo chiều sâu khác biệt cho hành trình: không chỉ đi lên cao, mà còn đi qua rừng, chùa, tháp và các lớp lịch sử của thiền phái Trúc Lâm.</p>
+            <dl class="data-list">
+              <div><dt>Vị trí</dt><dd>Quảng Ninh</dd></div>
+              <div><dt>Phong cách</dt><dd>Culture / Spiritual</dd></div>
+              <div><dt>Độ khó</dt><dd>Dễ đến trung bình</dd></div>
+              <div><dt>Mùa đẹp</dt><dd>Xuân và thu</dd></div>
+              <div><dt>Điểm nhấn</dt><dd>Lịch sử / Rừng / Kiến trúc</dd></div>
+            </dl>
+            <button class="button button--story" type="button" data-detail-toggle="yen-tu-details" data-mountain-link="yen_tu">Khám phá</button>
+          </div>
+          <div class="mountain-detail" id="yen-tu-details" hidden>
+            <button class="detail-back" type="button" data-detail-back>← Quay lại hành trình</button>
+            <div class="mountain-detail__hero">
+              <div>
+                <p class="eyebrow">Explore tab / Yên Tử</p>
+                <h2>Yên Tử đáng đến vì đây là nơi núi, rừng và lịch sử Phật giáo Việt Nam gặp nhau</h2>
+                <p>Nếu các đỉnh còn lại thiên về trekking, Yên Tử tạo chiều sâu văn hóa: chùa, am, tháp, rừng cổ và hành trình gắn với Phật hoàng Trần Nhân Tông cùng Thiền phái Trúc Lâm.</p>
+              </div>
+              <div class="video-slot video-slot--large">
+                <video src="assets/videos/yen-tu.mp4" muted loop playsinline controls preload="metadata"></video>
+              </div>
+            </div>
+            <div class="mountain-detail__grid">
+              <figure class="detail-image">
+                <img src="assets/images/yen-tu/yen-tu-02.jpg" alt="Gợi ý ảnh chi tiết Yên Tử: rừng, chùa và đường núi" loading="lazy" />
+                <figcaption>Ảnh chi tiết: `assets/images/yen-tu/yen-tu-02.jpg`</figcaption>
+              </figure>
+              <div class="mountain-detail__copy">
+                <h3>Điểm thật sự đặc biệt</h3>
+                <p>Yên Tử không hấp dẫn bằng độ cao tuyệt đối mà bằng chiều sâu di sản. Cục Du lịch Quốc gia mô tả nơi đây là quần thể chùa, am, tháp, tượng và rừng cây cổ thụ; đỉnh Yên Tử có Chùa Đồng ở độ cao 1.068 m.</p>
+                <p>Năm 2025, quần thể Yên Tử - Vĩnh Nghiêm - Côn Sơn, Kiếp Bạc được UNESCO công nhận là Di sản Văn hóa Thế giới. Chi tiết này giúp section Yên Tử có sức nặng thông tin, không chỉ là “núi có chùa”.</p>
+                <p>Linh hồn của Yên Tử nằm ở câu chuyện Phật hoàng Trần Nhân Tông: một vị vua nhà Trần từng ở đỉnh cao quyền lực, sau đó nhường ngôi, xuất gia và gắn với sự hình thành Thiền phái Trúc Lâm Yên Tử vào thế kỷ XIII. Đây là chi tiết khiến Yên Tử khác hẳn các điểm trekking thuần thiên nhiên.</p>
+                <p>Không gian di sản không chỉ là một ngọn núi đơn lẻ. Nó liên kết núi rừng, chùa, am, tháp, di tích khảo cổ và các địa điểm gắn với nhà Trần, tạo thành một hành trình văn hóa trải rộng qua nhiều địa phương.</p>
+                <ul class="highlight-list">
+                  <li>Đáng đến vì có câu chuyện lịch sử, tín ngưỡng và kiến trúc kéo dài nhiều thế kỷ.</li>
+                  <li>Trúc Lâm Yên Tử được xem như dòng Thiền mang bản sắc Việt, kết hợp Phật giáo, Nho giáo, Đạo giáo và tín ngưỡng bản địa.</li>
+                  <li>Hành trình lên Yên Tử đẹp ở nhịp đi qua từng bậc đá, rừng, chùa, tháp rồi mới chạm tới Chùa Đồng.</li>
+                  <li>Khác biệt hoàn toàn với các cung săn mây: cảm giác chậm, tĩnh, nhiều suy ngẫm.</li>
+                  <li>Video nên dùng nhịp chậm, ít cắt cảnh, nhấn vào sương, rừng và bước chân hành hương.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="mountain-story section-observed" id="ta-chi-nhu" data-theme="ta-chi-nhu" data-mountain="ta_chi_nhu">
+          <figure class="mountain-story__media reveal">
+            <img src="assets/images/ta-chi-nhu/ta-chi-nhu-01.jpg" alt="Sườn núi Tà Chì Nhù trong biển mây và sắc hoa Chi Pâu" loading="lazy" />
+            <figcaption>Ảnh section: assets/images/ta-chi-nhu/ta-chi-nhu-01.jpg</figcaption>
+          </figure>
+          <div class="mountain-story__content reveal">
+            <span class="mountain-story__index">03</span>
+            <h2>Tà Chì Nhù</h2>
+            <p class="mountain-story__height">2.979 m</p>
+            <h3>Nơi những sườn núi nở hoa trên biển mây</h3>
+            <p>Tà Chì Nhù có vẻ đẹp mộng hơn là dữ dội: biển mây trắng, triền núi rộng và mùa hoa Chi Pâu nhuộm tím những cung đường Tây Bắc.</p>
+            <dl class="data-list">
+              <div><dt>Vị trí</dt><dd>Yên Bái</dd></div>
+              <div><dt>Phong cách</dt><dd>Cloud Sea / Photography</dd></div>
+              <div><dt>Độ khó</dt><dd>Khó</dd></div>
+              <div><dt>Mùa đẹp</dt><dd>Tháng 10 đến tháng 3</dd></div>
+              <div><dt>Điểm nhấn</dt><dd>Hoa Chi Pâu / Biển mây</dd></div>
+            </dl>
+            <button class="button button--story" type="button" data-detail-toggle="ta-chi-nhu-details" data-mountain-link="ta_chi_nhu">Khám phá</button>
+          </div>
+          <div class="mountain-detail" id="ta-chi-nhu-details" hidden>
+            <button class="detail-back" type="button" data-detail-back>← Quay lại hành trình</button>
+            <div class="mountain-detail__hero">
+              <div>
+                <p class="eyebrow">Explore tab / Tà Chì Nhù</p>
+                <h2>Tà Chì Nhù đáng đến vì biển mây và hoa Chi Pâu tạo nên một cảnh quan rất hiếm gặp</h2>
+                <p>Đây là đỉnh giàu chất hình ảnh nhất trong danh sách: sống núi mở, gió mạnh, biển mây trắng và những triền hoa tím khiến hành trình có cảm giác vừa hoang sơ vừa mộng.</p>
+              </div>
+              <div class="video-slot video-slot--large">
+                <video src="assets/videos/ta-chi-nhu.mp4" muted loop playsinline controls preload="metadata"></video>
+              </div>
+            </div>
+            <div class="mountain-detail__grid">
+              <figure class="detail-image">
+                <img src="assets/images/ta-chi-nhu/ta-chi-nhu-02.jpg" alt="Gợi ý ảnh chi tiết Tà Chì Nhù: biển mây và sườn núi" loading="lazy" />
+                <figcaption>Ảnh chi tiết: `assets/images/ta-chi-nhu/ta-chi-nhu-02.jpg`</figcaption>
+              </figure>
+              <div class="mountain-detail__copy">
+                <h3>Điểm thật sự đặc biệt</h3>
+                <p>Cục Du lịch Quốc gia Việt Nam cho biết Tà Chì Nhù cao 2.979 m, là đỉnh cao nhất huyện Trạm Tấu, Yên Bái và thuộc khối Pú Luông của dãy Hoàng Liên Sơn. Cung leo bắt đầu sau đoạn đường xe cơ giới qua khu vực Cang Chi Khúa, rồi bước vào hành trình trekking hơn 18 km.</p>
+                <p>Điều làm Tà Chì Nhù khác biệt là mùa hoa Chi Pâu. Tên hoa trong tiếng Mông có nghĩa gần như “không biết”, tạo một chi tiết kể chuyện rất hay: một loài hoa dại không cần tên gọi sang trọng nhưng lại phủ tím các triền núi vào mùa đẹp nhất.</p>
+                <p>Nếu Fansipan là biểu tượng cao nhất, Tà Chì Nhù nên được kể như “đại dương trên mây”. Địa hình cao và thoáng khiến mây có thể phủ kín thung lũng phía dưới, tạo cảm giác người đi đang bước trên một biển trắng khổng lồ.</p>
+                <p>Cung này vẫn giữ cảm giác chinh phục rất rõ: không có cáp treo, nhiều đoạn dốc liên tục, đá sỏi, ít bóng cây và gió mạnh. Chính sự khắc nghiệt ấy làm cảnh bình minh, đồng cỏ, hoa Chi Pâu và biển mây trở nên đáng giá hơn.</p>
+                <ul class="highlight-list">
+                  <li>Đáng đến vì vừa có độ cao, vừa có nhận diện thị giác riêng: mây trắng và sắc tím.</li>
+                  <li>Thời điểm săn mây và hoa thường đẹp từ khoảng giữa tháng 9 đến tháng 4 năm sau.</li>
+                  <li>Được mô tả như “vương quốc của nắng và gió”, hợp với các cảnh quay sống núi, cỏ núi và mây chuyển động.</li>
+                  <li>Có thể khai thác hình ảnh những đàn ngựa trên đồng cỏ cao, tạo cảm giác rất điện ảnh.</li>
+                  <li>Tà Chì Nhù còn có các tên gọi địa phương như Phu Song Sung hoặc Chung Chua Nhà, giúp ngọn núi có thêm chiều sâu văn hóa.</li>
+                  <li>Video nên có chuyển động chậm của mây và cảnh người đi nhỏ bé trên sống núi.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="mountain-story mountain-story--reverse section-observed" id="ky-quan-san" data-theme="ky-quan-san" data-mountain="ky_quan_san">
+          <figure class="mountain-story__media reveal">
+            <img src="assets/images/ky-quan-san/ky-quan-san-01.jpg" alt="Cung đường Ky Quan San với núi rừng và ánh bình minh" loading="lazy" />
+            <figcaption>Ảnh section: assets/images/ky-quan-san/ky-quan-san-01.jpg</figcaption>
+          </figure>
+          <div class="mountain-story__content reveal">
+            <span class="mountain-story__index">04</span>
+            <h2>Ky Quan San</h2>
+            <p class="mountain-story__height">3.046 m</p>
+            <h3>Cho những người muốn đi xa hơn giới hạn của mình</h3>
+            <p>Còn được biết đến với tên Bạch Mộc Lương Tử, Ky Quan San là hành trình của sức bền, rừng sâu, sống núi và khoảnh khắc bình minh trên Núi Muối.</p>
+            <dl class="data-list">
+              <div><dt>Vị trí</dt><dd>Lào Cai / Lai Châu</dd></div>
+              <div><dt>Phong cách</dt><dd>Adventure / Trekking</dd></div>
+              <div><dt>Độ khó</dt><dd>Thử thách</dd></div>
+              <div><dt>Mùa đẹp</dt><dd>Tháng 10 đến tháng 4</dd></div>
+              <div><dt>Điểm nhấn</dt><dd>Núi Muối / Bình minh</dd></div>
+            </dl>
+            <button class="button button--story" type="button" data-detail-toggle="ky-quan-san-details" data-mountain-link="ky_quan_san">Khám phá</button>
+          </div>
+          <div class="mountain-detail" id="ky-quan-san-details" hidden>
+            <button class="detail-back" type="button" data-detail-back>← Quay lại hành trình</button>
+            <div class="mountain-detail__hero">
+              <div>
+                <p class="eyebrow">Explore tab / Ky Quan San</p>
+                <h2>Ky Quan San đáng đến vì đây là cung giàu thử thách nhất và có bình minh Núi Muối rất đặc trưng</h2>
+                <p>Còn được gọi là Bạch Mộc Lương Tử, ngọn núi này hợp với người muốn cảm giác adventure rõ rệt: đường rừng dài, dốc gắt, thời tiết lạnh ẩm và phần thưởng là biển mây dày khi bình minh lên.</p>
+              </div>
+              <div class="video-slot video-slot--large">
+                <video src="assets/videos/ky-quan-san.mp4" muted loop playsinline controls preload="metadata"></video>
+              </div>
+            </div>
+            <div class="mountain-detail__grid">
+              <figure class="detail-image">
+                <img src="assets/images/ky-quan-san/ky-quan-san-02.jpg" alt="Gợi ý ảnh chi tiết Ky Quan San: bình minh Núi Muối" loading="lazy" />
+                <figcaption>Ảnh chi tiết: `assets/images/ky-quan-san/ky-quan-san-02.jpg`</figcaption>
+              </figure>
+              <div class="mountain-detail__copy">
+                <h3>Điểm thật sự đặc biệt</h3>
+                <p>Ky Quan San cao 3.046 m, nằm giữa Lào Cai và Lai Châu. Nhiều tài liệu du lịch mô tả đây là một trong các điểm trekking nổi tiếng của Tây Bắc, với cung đường có thể bắt đầu từ Sàng Ma Sáo hoặc Dền Sung.</p>
+                <p>Điểm nên nhấn mạnh trong website là bình minh Núi Muối: người đi thường dậy rất sớm, leo trong lạnh và sương, rồi chờ khoảnh khắc mặt trời mở ra trên biển mây. Đây là “payoff scene” rất hợp để làm video 10-30 giây.</p>
+                <p>Ky Quan San còn được nhiều người biết đến với tên Bạch Mộc Lương Tử. Đây là một trong những đỉnh núi cao nhất Việt Nam, nhưng điều đáng nhớ không chỉ là con số 3.046 m mà là cảm giác “không có đường tắt”: rừng, dốc, đá, sống núi và thời tiết thay đổi liên tục.</p>
+                <p>Trên hành trình, cảnh quan có thể chuyển từ rừng xanh sang cỏ núi, vách đá, rừng phủ rêu rồi đến biển mây. Vào những đợt rét mạnh, khu vực núi cao còn có thể xuất hiện băng giá hoặc tuyết, tạo ra một Ky Quan San rất khác vào mùa đông.</p>
+                <ul class="highlight-list">
+                  <li>Đáng đến vì cảm giác thử thách thật, không chỉ là ngắm cảnh.</li>
+                  <li>Núi Muối là điểm săn mây và ngắm bình minh nổi tiếng trên cung đường.</li>
+                  <li>Có thể kể bằng bản đồ đơn giản: Lào Cai ← Ky Quan San → Lai Châu, vì cung này có nhiều hướng tiếp cận khác nhau.</li>
+                  <li>Nên ghi rõ Ky Quan San còn được biết đến với tên Bạch Mộc Lương Tử để người xem không bị nhầm là hai địa danh khác nhau.</li>
+                  <li>Cung đường có rừng, dốc, sương mù và những đoạn khiến hành trình có nhịp kể chuyện mạnh.</li>
+                  <li>Video nên dựng cinematic, âm thanh gió và bước chân sẽ hợp hơn nhạc quá sôi động.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="mountain-story section-observed" id="lao-than" data-theme="lao-than" data-mountain="lao_than">
+          <figure class="mountain-story__media reveal">
+            <img src="assets/images/lao-than/lao-than-01.jpg" alt="Lảo Thẩn với lều trại, bình minh và biển mây" loading="lazy" />
+            <figcaption>Ảnh section: assets/images/lao-than/lao-than-01.jpg</figcaption>
+          </figure>
+          <div class="mountain-story__content reveal">
+            <span class="mountain-story__index">05</span>
+            <h2>Lảo Thẩn</h2>
+            <p class="mountain-story__height">2.860 m</p>
+            <h3>Nơi hành trình trekking đầu tiên có thể bắt đầu</h3>
+            <p>Lảo Thẩn là cánh cửa dễ tiếp cận hơn vào thế giới trekking Tây Bắc: săn mây, cắm trại và đón bình minh trong một chuyến đi vừa sức.</p>
+            <dl class="data-list">
+              <div><dt>Vị trí</dt><dd>Lào Cai</dd></div>
+              <div><dt>Phong cách</dt><dd>Beginner / Camping</dd></div>
+              <div><dt>Độ khó</dt><dd>Trung bình</dd></div>
+              <div><dt>Mùa đẹp</dt><dd>Tháng 10 đến tháng 4</dd></div>
+              <div><dt>Điểm nhấn</dt><dd>Cắm trại / Săn mây</dd></div>
+            </dl>
+            <a class="button button--story" href="#quiz" data-track-cta="lao_than_quiz">Đây có phải đỉnh núi dành cho bạn?</a>
+            <button class="button button--story button--ghost" type="button" data-detail-toggle="lao-than-details" data-mountain-link="lao_than">Khám phá điểm nổi bật</button>
+          </div>
+          <div class="mountain-detail" id="lao-than-details" hidden>
+            <button class="detail-back" type="button" data-detail-back>← Quay lại hành trình</button>
+            <div class="mountain-detail__hero">
+              <div>
+                <p class="eyebrow">Explore tab / Lảo Thẩn</p>
+                <h2>Lảo Thẩn đáng đến vì nó là điểm bắt đầu vừa sức để thử trekking, camping và săn mây</h2>
+                <p>Không quá cực như các cung trên 3.000 m, Lảo Thẩn vẫn có đủ cảm giác Tây Bắc: đồi cỏ, gió mạnh, lán nghỉ, bình minh và biển mây ở Y Tý.</p>
+              </div>
+              <div class="video-slot video-slot--large">
+                <video src="assets/videos/lao-than.mp4" muted loop playsinline controls preload="metadata"></video>
+              </div>
+            </div>
+            <div class="mountain-detail__grid">
+              <figure class="detail-image">
+                <img src="assets/images/lao-than/lao-than-02.jpg" alt="Gợi ý ảnh chi tiết Lảo Thẩn: cắm trại và biển mây" loading="lazy" />
+                <figcaption>Ảnh chi tiết: `assets/images/lao-than/lao-than-02.jpg`</figcaption>
+              </figure>
+              <div class="mountain-detail__copy">
+                <h3>Điểm thật sự đặc biệt</h3>
+                <p>Lảo Thẩn thuộc khu vực Y Tý, Bát Xát, Lào Cai và thường được gọi là “nóc nhà Y Tý”. Cục Du lịch Quốc gia Việt Nam ghi nhận đỉnh này ở độ cao khoảng 2.862 m, phù hợp với người muốn thử sức sau Fansipan hoặc người mới muốn một cung trekking có tính thử thách vừa phải.</p>
+                <p>Điểm đáng giá nhất là cảm giác “đài quan sát riêng”: khi lên vùng cao, mây từ thung lũng bị gió đẩy qua sườn núi, còn người đứng trên đỉnh nhìn thấy bình minh mở ra trên các lớp mây.</p>
+                <p>Lảo Thẩn đẹp vì cả hành trình chứ không chỉ ở mốc đỉnh: từ bản làng Y Tý, rừng, đồng cỏ, núi trọc, sương mây rồi đến khoảnh khắc đứng trên cao nhìn mây nằm dưới chân. So với các cung rất nặng như Ky Quan San, Lảo Thẩn thường được xem là lựa chọn dễ tiếp cận hơn cho người mới muốn thử trekking núi cao.</p>
+                <p>Một chi tiết có thể làm phần này giàu hình ảnh hơn là hoa đỗ quyên đỏ giữa núi rừng, tạo tương phản với rừng xanh, mây trắng và nền trời cao. Bên cạnh thiên nhiên, cung đường còn gắn với đời sống Y Tý, các bản làng và văn hóa cộng đồng vùng cao.</p>
+                <ul class="highlight-list">
+                  <li>Đáng đến vì cân bằng tốt giữa độ khó, cảnh đẹp và khả năng đi theo nhóm mới.</li>
+                  <li>Có thể kể thêm trải nghiệm cắm trại, ngắm sao, dậy sớm săn mây.</li>
+                  <li>Được biết đến với bình minh và hoàng hôn đẹp ở Y Tý, khi biển mây đổi màu theo ánh sáng.</li>
+                  <li>Nên khai thác thêm yếu tố con người: bản làng, ruộng nương, văn hóa Hà Nhì và đời sống vùng cao.</li>
+                  <li>Có thể ghi chú độ cao theo nguồn dao động khoảng 2.826-2.862 m; website đang dùng mốc phổ biến khoảng 2.860 m.</li>
+                  <li>Video nên rộng và sáng: ưu tiên cảnh mây, lều, người nhỏ giữa không gian lớn.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="altitude section section-observed" id="altitude">
+        <div class="section__inner">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Altitude journey</p>
+            <h2 class="section-title--compact">5 đỉnh núi — 5 độ cao</h2>
+          </div>
+          <div class="altitude__stage reveal" data-altitude-chart>
+            <div class="altitude__ridge" aria-hidden="true"></div>
+            <article class="altitude-mountain altitude-mountain--top" style="--mountain-height: 325px; --peak: 10%;" data-value="3143">
+              <span class="altitude-mountain__height"><span data-count>0</span> m</span>
+              <div class="mountain-shape" aria-hidden="true"></div>
+              <strong>Fansipan</strong>
+            </article>
+            <article class="altitude-mountain" style="--mountain-height: 315px; --peak: 28%;" data-value="3046">
+              <span class="altitude-mountain__height"><span data-count>0</span> m</span>
+              <div class="mountain-shape" aria-hidden="true"></div>
+              <strong>Ky Quan San</strong>
+            </article>
+            <article class="altitude-mountain" style="--mountain-height: 309px; --peak: 42%;" data-value="2979">
+              <span class="altitude-mountain__height"><span data-count>0</span> m</span>
+              <div class="mountain-shape" aria-hidden="true"></div>
+              <strong>Tà Chì Nhù</strong>
+            </article>
+            <article class="altitude-mountain" style="--mountain-height: 296px; --peak: 60%;" data-value="2860">
+              <span class="altitude-mountain__height"><span data-count>0</span> m</span>
+              <div class="mountain-shape" aria-hidden="true"></div>
+              <strong>Lảo Thẩn</strong>
+            </article>
+            <article class="altitude-mountain altitude-mountain--low" style="--mountain-height: 124px; --peak: 74%;" data-value="1068">
+              <span class="altitude-mountain__height"><span data-count>0</span> m</span>
+              <div class="mountain-shape" aria-hidden="true"></div>
+              <strong>Yên Tử</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz section section-observed" id="quiz">
+        <div class="section__inner quiz__grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Find your mountain</p>
+            <h2>Đỉnh núi nào dành cho bạn?</h2>
+          </div>
+          <form class="quiz__form reveal" data-quiz>
+            <fieldset>
+              <legend>Bạn muốn chuyến đi như thế nào?</legend>
+              <label><input type="radio" name="pace" value="easy" checked /> Nhẹ nhàng</label>
+              <label><input type="radio" name="pace" value="balanced" /> Vừa sức</label>
+              <label><input type="radio" name="pace" value="hard" /> Thử thách</label>
+            </fieldset>
+            <fieldset>
+              <legend>Bạn thích điều gì nhất?</legend>
+              <label><input type="radio" name="interest" value="cloud" checked /> Biển mây</label>
+              <label><input type="radio" name="interest" value="culture" /> Văn hóa</label>
+              <label><input type="radio" name="interest" value="trekking" /> Trekking</label>
+              <label><input type="radio" name="interest" value="camping" /> Camping</label>
+            </fieldset>
+            <fieldset>
+              <legend>Bạn ưu tiên?</legend>
+              <label><input type="radio" name="priority" value="access" checked /> Dễ tiếp cận</label>
+              <label><input type="radio" name="priority" value="view" /> Khung cảnh</label>
+              <label><input type="radio" name="priority" value="achievement" /> Thành tích</label>
+            </fieldset>
+            <button class="button" type="submit" data-track-cta="quiz_submit">Xem kết quả</button>
+          </form>
+          <aside class="quiz__result reveal" data-quiz-result aria-live="polite">
+            <span>Your peak</span>
+            <h3>Lảo Thẩn</h3>
+            <p>Bạn phù hợp với một chuyến trekking vừa sức, cắm trại và săn mây vào sáng sớm.</p>
+            <a class="button button--ghost" href="#lao-than">Xem Lảo Thẩn</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="closing section-observed" id="journey">
+        <img src="assets/images/fansipan/fansipan-03.jpg" alt="Toàn cảnh đỉnh Fansipan với cột cờ và biển mây" loading="lazy" />
+        <span class="image-path image-path--closing">Ảnh closing: assets/images/fansipan/fansipan-03.jpg</span>
+        <div class="closing__overlay"></div>
+        <div class="closing__content reveal">
+          <h2>The summit is not the end.</h2>
+          <p>Đỉnh núi không phải điểm kết thúc. Nó là nơi bạn nhìn lại quãng đường mình đã đi qua.</p>
+          <a class="button" href="#hero" data-track-cta="back_to_top">Trở lại đầu hành trình</a>
+        </div>
+      </section>
+
+      <section class="about section section-observed" id="about">
+        <div class="section__inner about__grid">
+          <div class="about__profile reveal">
+            <p class="eyebrow">About me</p>
+            <h2>Nguyễn Văn Độ</h2>
+            <p class="about__role">Linux Software Developer</p>
+            <p>
+              Tôi quan tâm đến Linux, hệ thống nhúng, smarthome và các giải pháp trợ lý ảo có thể hỗ trợ con người trong đời sống hằng ngày.
+              Với nền tảng phát triển phần mềm trên Linux, tôi yêu thích việc xây dựng những hệ thống ổn định, dễ mở rộng và có khả năng kết nối giữa phần cứng, phần mềm và trải nghiệm người dùng.
+            </p>
+            <ul class="tag-list" aria-label="Lĩnh vực quan tâm">
+              <li>Linux</li>
+              <li>Smarthome</li>
+              <li>Voice assistant</li>
+              <li>Automation</li>
+              <li>Embedded software</li>
+            </ul>
+            <p class="about__placeholder">**************<br />**************<br />**************</p>
+          </div>
+          <aside class="about__why reveal">
+            <h3>Vì sao tôi chọn chủ đề này?</h3>
+            <p>
+              Tôi chọn chủ đề 5 đỉnh núi đẹp nhất Việt Nam vì đây là một đề tài có nhiều chất liệu hình ảnh, cảm xúc và dữ liệu để xây dựng một website storytelling.
+              Chủ đề này cũng cho phép kết hợp giữa thiết kế giao diện, trải nghiệm tương tác và nội dung du lịch Việt Nam theo một cách trực quan, hiện đại.
+            </p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div>
+          <h2>Vietnam Above The Clouds</h2>
+        </div>
+        <nav aria-label="Liên kết chân trang">
+          <a href="#fansipan">Fansipan</a>
+          <a href="#yen-tu">Yên Tử</a>
+          <a href="#ta-chi-nhu">Tà Chì Nhù</a>
+          <a href="#ky-quan-san">Ky Quan San</a>
+          <a href="#lao-than">Lảo Thẩn</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/analytics.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
