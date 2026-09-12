@@ -5,6 +5,7 @@
 - [x] Hero có ảnh nền, overlay và CTA rõ.
 - [x] Typography dùng Playfair Display + Be Vietnam Pro.
 - [x] Màu sắc bám theo README.
+- [x] Palette đã chuyển sang xanh đồi núi sáng hơn, bớt cảm giác tối.
 - [x] Không dùng framework frontend.
 - [x] Có responsive CSS cho desktop, tablet, mobile.
 - [x] Có CSS chặn horizontal overflow ở cấp `body`.

@@ -1,14 +1,14 @@
 :root {
-  --bg-dark: #07110f;
-  --bg-green: #10201a;
-  --surface: #142821;
-  --surface-soft: rgba(20, 40, 33, 0.68);
-  --text-main: #f4f2ea;
-  --text-muted: #b9c1ba;
-  --accent-gold: #d8b56a;
+  --bg-dark: #153327;
+  --bg-green: #1f4a35;
+  --surface: #2c5a43;
+  --surface-soft: rgba(44, 90, 67, 0.68);
+  --text-main: #fbf8ee;
+  --text-muted: #d4ded2;
+  --accent-gold: #f0c96c;
   --cloud-white: #f7f8f4;
-  --line: rgba(247, 248, 244, 0.14);
-  --shadow: 0 24px 70px rgba(0, 0, 0, 0.36);
+  --line: rgba(247, 248, 244, 0.2);
+  --shadow: 0 24px 70px rgba(24, 54, 39, 0.28);
   --font-heading: "Playfair Display", Georgia, serif;
   --font-body: "Be Vietnam Pro", Arial, sans-serif;
   color-scheme: dark;
@@ -33,11 +33,11 @@ body {
   transition: background-color 900ms ease;
 }
 
-body.theme-fansipan { background-color: #07110f; }
-body.theme-yen-tu { background-color: #122016; }
-body.theme-ta-chi-nhu { background-color: #181521; }
-body.theme-ky-quan-san { background-color: #17130f; }
-body.theme-lao-than { background-color: #101b22; }
+body.theme-fansipan { background-color: #1b3f30; }
+body.theme-yen-tu { background-color: #244f36; }
+body.theme-ta-chi-nhu { background-color: #2f4550; }
+body.theme-ky-quan-san { background-color: #415032; }
+body.theme-lao-than { background-color: #24546a; }
 
 img {
   display: block;
@@ -182,7 +182,7 @@ button.button {
 
 .site-header.is-scrolled,
 .site-header.is-open {
-  background: rgba(7, 17, 15, 0.76);
+  background: rgba(21, 51, 39, 0.82);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(18px);
 }
@@ -271,8 +271,8 @@ button.button {
 
 .hero__overlay {
   background:
-    linear-gradient(90deg, rgba(7, 17, 15, 0.86), rgba(7, 17, 15, 0.36) 55%, rgba(7, 17, 15, 0.72)),
-    linear-gradient(0deg, var(--bg-dark), rgba(7, 17, 15, 0.08) 42%);
+    linear-gradient(90deg, rgba(16, 45, 34, 0.76), rgba(24, 78, 54, 0.28) 55%, rgba(17, 55, 45, 0.52)),
+    linear-gradient(0deg, var(--bg-dark), rgba(21, 51, 39, 0.02) 42%);
 }
 
 .hero__cloud {
@@ -387,7 +387,7 @@ button.button {
 .quiz__result {
   border: 1px solid var(--line);
   border-radius: 6px;
-  background: rgba(247, 248, 244, 0.045);
+  background: rgba(247, 248, 244, 0.085);
 }
 
 .intro__metrics div {
@@ -573,8 +573,8 @@ body.is-detail-open {
   overflow-y: auto;
   padding: 34px max(22px, calc((100vw - 1180px) / 2)) 64px;
   background:
-    radial-gradient(circle at 72% 0%, rgba(216, 181, 106, 0.14), transparent 32%),
-    linear-gradient(135deg, rgba(7, 17, 15, 0.98), rgba(16, 32, 26, 0.98));
+    radial-gradient(circle at 72% 0%, rgba(240, 201, 108, 0.18), transparent 32%),
+    linear-gradient(135deg, rgba(21, 51, 39, 0.98), rgba(35, 89, 61, 0.98));
   opacity: 0;
   transform: translateY(18px) scale(0.985);
   transition: opacity 320ms ease, transform 320ms ease;
@@ -682,7 +682,7 @@ body.is-detail-open {
   margin: 24px 0 0;
   padding: 18px 20px;
   border-left: 3px solid var(--accent-gold);
-  background: rgba(247, 248, 244, 0.045);
+  background: rgba(247, 248, 244, 0.085);
   color: var(--text-main);
 }
 
@@ -692,7 +692,7 @@ body.is-detail-open {
   padding: 18px;
   border: 1px dashed rgba(247, 248, 244, 0.28);
   border-radius: 6px;
-  background: rgba(247, 248, 244, 0.045);
+  background: rgba(247, 248, 244, 0.085);
   color: var(--text-muted);
   font-size: 0.86rem;
   text-align: center;
@@ -704,7 +704,7 @@ body.is-detail-open {
   gap: 14px;
   border-style: solid;
   background:
-    linear-gradient(0deg, rgba(7, 17, 15, 0.76), rgba(7, 17, 15, 0.26)),
+    linear-gradient(0deg, rgba(16, 45, 34, 0.68), rgba(28, 91, 60, 0.18)),
     url("../assets/images/hero/fansipan-hero.webp") center / cover;
   color: var(--cloud-white);
   text-align: left;
@@ -730,7 +730,7 @@ body.is-detail-open {
 }
 
 .altitude {
-  background: linear-gradient(180deg, rgba(20, 40, 33, 0.7), var(--bg-dark));
+  background: linear-gradient(180deg, rgba(61, 117, 77, 0.52), var(--bg-dark));
 }
 
 .altitude__chart {
@@ -742,7 +742,7 @@ body.is-detail-open {
   padding: 28px;
   border: 1px solid var(--line);
   border-radius: 6px;
-  background: rgba(247, 248, 244, 0.04);
+  background: rgba(247, 248, 244, 0.08);
 }
 
 .altitude__bar {
@@ -800,7 +800,7 @@ body.is-detail-open {
   padding: 22px;
   border: 1px solid var(--line);
   border-radius: 6px;
-  background: rgba(247, 248, 244, 0.04);
+  background: rgba(247, 248, 244, 0.08);
 }
 
 .quiz__form legend {
@@ -858,7 +858,7 @@ body.is-detail-open {
 }
 
 .closing__overlay {
-  background: rgba(7, 17, 15, 0.72);
+  background: rgba(21, 51, 39, 0.58);
 }
 
 .closing__content {
@@ -933,7 +933,7 @@ body.is-detail-open {
 .footer {
   padding: 56px 0;
   border-top: 1px solid var(--line);
-  background: #050b0a;
+  background: #10271e;
 }
 
 .footer__inner {

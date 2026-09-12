@@ -82,3 +82,15 @@
   - không còn `Gallery`, `gallery`, `lightbox`, `MOMENTS`, `gallery_open` trong UI code
   - các asset thật trong `src/href` đều tồn tại
   - local server vẫn trả HTTP 200
+
+## Cập nhật màu tổng thể
+
+- Đã đổi palette từ xanh đen tối sang xanh đồi núi sáng hơn:
+  - nền chính `#153327`
+  - nền xanh `#1F4A35`
+  - surface `#2C5A43`
+  - text phụ sáng hơn `#D4DED2`
+  - accent gold sáng hơn `#F0C96C`
+- Đã giảm độ tối overlay hero/closing/explore tab để ảnh và nội dung thoáng hơn.
+- Đã làm card, quiz, altitude chart và mobile menu sáng hơn.
+- Đã cập nhật lại mục màu trong `readme.md`.

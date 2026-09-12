@@ -303,14 +303,16 @@ Không nên thiết kế theo kiểu:
 ## Màu nền chính
 
 ```css
---bg-dark: #07110F;
---bg-green: #10201A;
---surface: #142821;
---text-main: #F4F2EA;
---text-muted: #B9C1BA;
---accent-gold: #D8B56A;
+--bg-dark: #153327;
+--bg-green: #1F4A35;
+--surface: #2C5A43;
+--text-main: #FBF8EE;
+--text-muted: #D4DED2;
+--accent-gold: #F0C96C;
 --cloud-white: #F7F8F4;
 ```
+
+Tone tổng thể nên sáng hơn bản xanh đen ban đầu, thiên về **xanh đồi núi / forest green / sage green** để website có cảm giác thoáng, tươi và dễ đọc hơn.
 
 Có thể sử dụng màu accent phụ cho từng núi:
 
