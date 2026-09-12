@@ -1,0 +1,43 @@
+# Progress — Vietnam Above The Clouds
+
+## 2026-09-12
+
+- Đã đọc và sử dụng `readme.md` làm đặc tả chính.
+- Đã bổ sung yêu cầu `About Me` vào README ở lượt trước.
+- Đã tạo cấu trúc thư mục static:
+  - `index.html`
+  - `css/style.css`
+  - `css/responsive.css`
+  - `css/animations.css`
+  - `js/main.js`
+  - `js/analytics.js`
+  - `assets/images/...`
+  - `assets/icons/favicon.svg`
+- Đã dựng website single-page bằng HTML/CSS/JavaScript thuần, không framework, không build step.
+- Đã triển khai các section chính:
+  - Navigation sticky + mobile menu
+  - Hero Fansipan
+  - Introduction
+  - Mountain Selector
+  - 5 Mountain Stories
+  - Altitude Comparison
+  - Find Your Mountain Quiz
+  - Gallery + Lightbox
+  - Closing Journey
+  - About Me
+  - Footer
+- Đã tạo placeholder WebP nội bộ đúng tên file để thay ảnh thật sau.
+- Đã thêm GA4 placeholder `G-XXXXXXXXXX` và helper custom events trong `js/analytics.js`.
+- Đã thêm accessibility cơ bản: semantic HTML, alt text, focus visible, button/link đúng vai trò, reduced motion.
+- Đã sửa selector mặc định để lựa chọn “Biển mây” chỉ highlight Tà Chì Nhù và Lảo Thẩn.
+- Đã sửa `analytics.js` để custom events tự dùng `window.gtag`; sau này chỉ cần thay Measurement ID trong HTML.
+- Đã chạy kiểm tra:
+  - `node --check js/main.js`
+  - `node --check js/analytics.js`
+  - kiểm tra đủ 16 ảnh placeholder
+  - kiểm tra các asset trong HTML đều tồn tại
+  - chạy local server bằng `python3 -m http.server 8000`
+  - kiểm tra HTTP 200 cho trang và ảnh hero
+  - server log ghi nhận HTML, CSS, JS, favicon và ảnh chính được tải thành công
+- Chưa thể kiểm tra bằng browser tự động vì môi trường không có Chromium/Firefox/Playwright.
+- Local server đang chạy tại `http://127.0.0.1:8000/`.

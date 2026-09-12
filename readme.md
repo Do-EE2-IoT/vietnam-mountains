@@ -396,7 +396,8 @@ Thứ tự:
 07 Find Your Mountain
 08 Mountain Gallery
 09 Journey / Quote Section
-10 Footer
+10 About Me
+11 Footer
 ```
 
 ---
@@ -408,7 +409,7 @@ Navigation luôn nằm trên cùng.
 Desktop:
 
 ```text
-LOGO     Khám phá   Top 5   So sánh   Chọn đỉnh núi   Gallery      [BẮT ĐẦU]
+LOGO     Khám phá   Top 5   So sánh   Chọn đỉnh núi   Gallery   About me   [BẮT ĐẦU]
 ```
 
 Mobile:
@@ -974,7 +975,68 @@ CTA:
 
 ---
 
-# 30. SECTION 10 — Footer
+# 30. SECTION 10 — About Me
+
+Đây là một góc nhỏ để giới thiệu tác giả website.
+
+Không nên làm quá dài hoặc biến thành trang CV đầy đủ. Section này chỉ cần giúp người xem biết website được làm bởi ai, người làm có nền tảng gì và vì sao chọn chủ đề này.
+
+Tiêu đề:
+
+> **ABOUT ME**
+
+Nội dung gợi ý:
+
+```text
+Nguyễn Văn Độ
+Linux Software Developer
+
+Tôi quan tâm đến Linux, hệ thống nhúng, smarthome và các giải pháp trợ lý ảo có thể hỗ trợ con người trong đời sống hằng ngày. Với nền tảng phát triển phần mềm trên Linux, tôi yêu thích việc xây dựng những hệ thống ổn định, dễ mở rộng và có khả năng kết nối giữa phần cứng, phần mềm và trải nghiệm người dùng.
+
+Một số lĩnh vực tôi quan tâm:
+- Linux system programming
+- Smarthome / IoT
+- Voice assistant
+- Automation
+- Embedded software
+
+Thông tin bổ sung:
+**************
+**************
+**************
+```
+
+Vùng “Vì sao tôi chọn chủ đề này”:
+
+```text
+Tôi chọn chủ đề 5 đỉnh núi đẹp nhất Việt Nam vì đây là một đề tài có nhiều chất liệu hình ảnh, cảm xúc và dữ liệu để xây dựng một website storytelling. Chủ đề này cũng cho phép kết hợp giữa thiết kế giao diện, trải nghiệm tương tác và nội dung du lịch Việt Nam theo một cách trực quan, hiện đại.
+```
+
+Gợi ý layout:
+
+```text
+LEFT:
+ABOUT ME
+Nguyễn Văn Độ
+Linux Software Developer
+Short bio...
+
+RIGHT:
+Why this topic?
+Short explanation...
+```
+
+Yêu cầu:
+
+- Có thể đặt gần cuối website, trước Footer.
+- Thiết kế gọn, không chiếm quá nhiều chiều cao.
+- Có thể dùng avatar placeholder hoặc một khối visual đơn giản.
+- Có link / icon nhỏ nếu sau này muốn thêm GitHub, email, LinkedIn.
+- Nội dung cần cùng tone với website, không quá tách rời khỏi concept hành trình khám phá.
+
+---
+
+# 31. SECTION 11 — Footer
 
 Nội dung:
 
@@ -1003,7 +1065,7 @@ Nếu sử dụng ảnh có yêu cầu attribution, credit phải ghi chính xá
 
 ---
 
-# 31. Tính sáng tạo — Những feature nên ưu tiên
+# 32. Tính sáng tạo — Những feature nên ưu tiên
 
 Không cần làm tất cả.
 
@@ -1090,7 +1152,7 @@ hoặc chỉ dùng line.
 
 ---
 
-# 32. UX — Những thứ bắt buộc phải làm
+# 33. UX — Những thứ bắt buộc phải làm
 
 Để lấy điểm UX, website phải có các chi tiết sau:
 
@@ -1132,7 +1194,7 @@ Không dùng `<div>` thay button nếu không cần.
 
 ---
 
-# 33. Accessibility
+# 34. Accessibility
 
 Nên đạt tối thiểu:
 
@@ -1157,7 +1219,7 @@ Thêm support:
 
 ---
 
-# 34. Performance
+# 35. Performance
 
 Ảnh là thứ dễ làm website chậm nhất.
 
@@ -1191,7 +1253,7 @@ Không nên để ảnh 5–10 MB.
 
 ---
 
-# 35. Image loading
+# 36. Image loading
 
 Hero:
 
@@ -1215,7 +1277,7 @@ nếu Codex triển khai responsive image.
 
 ---
 
-# 36. Ảnh lấy ở đâu?
+# 37. Ảnh lấy ở đâu?
 
 Ưu tiên nguồn cho phép sử dụng phù hợp:
 
@@ -1230,7 +1292,7 @@ Google Images là công cụ tìm kiếm ảnh, không phải giấy phép sử 
 
 ---
 
-# 37. Codex có tự tải ảnh được không?
+# 38. Codex có tự tải ảnh được không?
 
 **Không nên giả định Codex luôn có thể tự tải ảnh.**
 
@@ -1301,7 +1363,7 @@ Không phải sửa HTML/CSS.
 ** Hãy lựa chọn cách C"
 ---
 
-# 38. Danh sách ảnh cần chuẩn bị
+# 39. Danh sách ảnh cần chuẩn bị
 
 Không cần quá nhiều.
 
@@ -1369,7 +1431,7 @@ Tổng:
 
 ---
 
-# 39. Quy tắc chọn ảnh
+# 40. Quy tắc chọn ảnh
 
 Không chọn 16 ảnh giống nhau.
 
@@ -1401,7 +1463,7 @@ Nhờ vậy gallery có nhịp thị giác tốt hơn.
 
 ---
 *** Từ bước 40 sau khi đã có hoàn chỉnh web, tôi sẽ tự implement và ứng dụng GA***
-# 40. Google Analytics 4
+# 41. Google Analytics 4
 
 Website cần có GA4 thực sự.
 
@@ -1429,7 +1491,7 @@ G-ABC1234567
 
 ---
 
-# 41. GA4 base code
+# 42. GA4 base code
 
 Codex cần để placeholder:
 
@@ -1460,7 +1522,7 @@ bằng Measurement ID thật.
 
 ---
 
-# 42. GA4 custom events
+# 43. GA4 custom events
 
 Không chỉ track page view.
 
@@ -1514,7 +1576,7 @@ gtag('event', 'cta_click', {
 
 ---
 
-# 43. Scroll tracking
+# 44. Scroll tracking
 
 Nên track:
 
@@ -1541,7 +1603,7 @@ gtag('event', 'scroll_depth', {
 
 ---
 
-# 44. GA Dashboard nên trình bày khi nộp bài
+# 45. GA Dashboard nên trình bày khi nộp bài
 
 Nếu cần demo GA:
 
@@ -1568,7 +1630,7 @@ cta_click
 
 ---
 
-# 45. Lưu ý khi test GA
+# 46. Lưu ý khi test GA
 
 Không nên chỉ double click:
 
@@ -1590,7 +1652,7 @@ hoặc deploy.
 
 ---
 
-# 46. Hosting miễn phí
+# 47. Hosting miễn phí
 
 Lựa chọn đơn giản nhất:
 
@@ -1616,7 +1678,7 @@ Nhưng GitHub Pages là đủ.
 
 ---
 
-# 47. SEO cơ bản
+# 48. SEO cơ bản
 
 Trong `<head>` phải có:
 
@@ -1645,7 +1707,7 @@ alt text
 
 ---
 
-# 48. Semantic HTML
+# 49. Semantic HTML
 
 Ưu tiên:
 
@@ -1676,7 +1738,7 @@ Không viết cả website bằng:
 
 ---
 
-# 49. Animation
+# 50. Animation
 
 Animation chỉ phục vụ storytelling.
 
@@ -1712,7 +1774,7 @@ Không cần thư viện AOS.
 
 ---
 
-# 50. JS feature list
+# 51. JS feature list
 
 `main.js` sẽ phụ trách:
 
@@ -1741,7 +1803,7 @@ quiz tracking
 
 ---
 
-# 51. Không nên dùng quá nhiều thư viện
+# 52. Không nên dùng quá nhiều thư viện
 
 Không cần:
 
@@ -1770,7 +1832,7 @@ Mà vì bài này có thể làm đẹp mà không cần chúng.
 
 ---
 
-# 52. Nếu muốn dùng đúng 1 thư viện
+# 53. Nếu muốn dùng đúng 1 thư viện
 
 Có thể cân nhắc:
 
@@ -1786,7 +1848,7 @@ CSS + IntersectionObserver là đủ.
 
 ---
 
-# 53. Chiến lược lấy điểm “Giao diện và thiết kế — 2/2”
+# 54. Chiến lược lấy điểm “Giao diện và thiết kế — 2/2”
 
 Cần thể hiện:
 
@@ -1827,7 +1889,7 @@ Không nhồi quá nhiều text.
 
 ---
 
-# 54. Chiến lược lấy điểm “Nội dung — 2/2”
+# 55. Chiến lược lấy điểm “Nội dung — 2/2”
 
 Mỗi ngọn núi phải trả lời được:
 
@@ -1852,7 +1914,7 @@ Ví dụ:
 
 ---
 
-# 55. Chiến lược lấy điểm “UX — 2/2”
+# 56. Chiến lược lấy điểm “UX — 2/2”
 
 Website phải khiến người dùng:
 
@@ -1877,7 +1939,7 @@ Feature quan trọng:
 
 ---
 
-# 56. Chiến lược lấy điểm “Creativity — 2/2”
+# 57. Chiến lược lấy điểm “Creativity — 2/2”
 
 Ba feature đủ mạnh:
 
@@ -1905,7 +1967,7 @@ Fansipan     → gold / iconic
 
 ---
 
-# 57. Chiến lược lấy điểm GA
+# 58. Chiến lược lấy điểm GA
 
 Không chỉ gắn đoạn code.
 
@@ -1935,7 +1997,7 @@ Ví dụ:
 
 ---
 
-# 58. Checklist trước khi nộp
+# 59. Checklist trước khi nộp
 
 ## Design
 
@@ -1996,7 +2058,7 @@ Ví dụ:
 
 ---
 
-# 59. Acceptance Criteria cho Codex
+# 60. Acceptance Criteria cho Codex
 
 Khi giao README này cho Codex, website chỉ được coi là hoàn thành khi:
 
@@ -2038,7 +2100,7 @@ Khi giao README này cho Codex, website chỉ được coi là hoàn thành khi:
 
 ---
 
-# 60. Prompt để dùng README này với Codex
+# 61. Prompt để dùng README này với Codex
 
 Sau khi chuẩn bị xong project folder, có thể dùng prompt:
 
@@ -2079,7 +2141,7 @@ Hãy bắt đầu bằng việc:
 
 ---
 
-# 61. Workflow khuyến nghị từ bây giờ
+# 62. Workflow khuyến nghị từ bây giờ
 
 ## Giai đoạn 1 — Chốt README
 
@@ -2135,7 +2197,7 @@ Desktop + mobile + Lighthouse + Analytics Realtime.
 
 ---
 
-# 62. Những thứ KHÔNG nên làm
+# 63. Những thứ KHÔNG nên làm
 
 Không nên:
 
@@ -2154,7 +2216,7 @@ Không nên:
 
 ---
 
-# 63. “Wow factor” cuối cùng
+# 64. “Wow factor” cuối cùng
 
 Nếu còn thời gian sau khi website đã hoàn thiện, thêm:
 
@@ -2186,7 +2248,7 @@ Rất đẹp nhưng không quá phô trương.
 
 ---
 
-# 64. Hướng thuyết trình sản phẩm
+# 65. Hướng thuyết trình sản phẩm
 
 Khi giới thiệu, không nên nói:
 
@@ -2200,7 +2262,7 @@ Nên kể theo logic thiết kế:
 
 ---
 
-# 65. Kết luận thiết kế
+# 66. Kết luận thiết kế
 
 Website nên đạt cảm giác:
 
@@ -2237,7 +2299,7 @@ Nếu thực hiện đúng đặc tả này, project có đủ yếu tố để 
 
 ---
 
-# 66. Quyết định mặc định khi AI/Codex chưa được chỉ dẫn thêm
+# 67. Quyết định mặc định khi AI/Codex chưa được chỉ dẫn thêm
 
 Nếu không có yêu cầu thay đổi, Codex phải ưu tiên:
 

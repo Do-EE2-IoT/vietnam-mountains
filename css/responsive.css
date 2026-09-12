@@ -1,0 +1,200 @@
+@media (max-width: 1100px) {
+  .nav__links {
+    gap: 14px;
+  }
+
+  .selector__results {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .mountain-story,
+  .mountain-story--reverse {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .quiz__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .quiz__grid .section-heading {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 860px) {
+  .section {
+    padding: 84px 0;
+  }
+
+  .nav {
+    min-height: 68px;
+  }
+
+  .nav__toggle {
+    display: block;
+  }
+
+  .nav__links {
+    position: fixed;
+    inset: 68px 16px auto;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 12px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: rgba(7, 17, 15, 0.96);
+    box-shadow: var(--shadow);
+  }
+
+  .nav__links.is-open {
+    display: flex;
+  }
+
+  .nav__links a {
+    padding: 12px;
+  }
+
+  .nav__links .button {
+    margin-top: 8px;
+  }
+
+  .hero {
+    min-height: 100svh;
+  }
+
+  .hero__content {
+    padding-top: 90px;
+  }
+
+  .hero__stat {
+    right: auto;
+    left: 20px;
+    bottom: 86px;
+  }
+
+  .scroll-cue {
+    display: none;
+  }
+
+  .intro__grid,
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .selector__results {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mountain-story,
+  .mountain-story--reverse {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    padding-top: 76px;
+    padding-bottom: 76px;
+  }
+
+  .mountain-story--reverse .mountain-story__media {
+    order: 0;
+  }
+
+  .mountain-story__media {
+    min-height: 320px;
+    height: 52vh;
+  }
+
+  .altitude__chart {
+    height: auto;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+
+  .altitude__bar {
+    min-height: 74px;
+    grid-template-columns: 1fr 140px 78px;
+    grid-template-rows: auto;
+    align-items: center;
+    text-align: left;
+  }
+
+  .altitude__bar span {
+    width: 0;
+    height: 18px;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .altitude__chart.is-animated .altitude__bar span {
+    width: var(--height);
+    height: 18px;
+  }
+
+  .altitude__bar strong {
+    min-height: 0;
+  }
+
+  .quiz__grid,
+  .footer__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .footer nav {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 560px) {
+  .section__inner,
+  .hero__content,
+  .footer__inner {
+    width: min(100% - 28px, 1120px);
+  }
+
+  h1 {
+    font-size: clamp(3.1rem, 16vw, 4.6rem);
+  }
+
+  h2 {
+    font-size: clamp(2rem, 11vw, 3.4rem);
+  }
+
+  .hero__lead {
+    font-size: 1.16rem;
+  }
+
+  .hero__actions,
+  .selector__controls {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .button,
+  .selector__button {
+    width: 100%;
+  }
+
+  .intro__metrics,
+  .selector__results {
+    grid-template-columns: 1fr;
+  }
+
+  .data-list div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .gallery__grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 230px;
+  }
+
+  .gallery__item--large,
+  .gallery__item--wide {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .about__profile {
+    padding-right: 0;
+  }
+}

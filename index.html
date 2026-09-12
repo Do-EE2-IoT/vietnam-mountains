@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top 5 đỉnh núi đẹp nhất Việt Nam | Vietnam Above The Clouds</title>
+    <meta
+      name="description"
+      content="Khám phá Fansipan, Yên Tử, Tà Chì Nhù, Ky Quan San và Lảo Thẩn qua một hành trình tương tác trên những đỉnh núi đẹp của Việt Nam."
+    />
+    <meta property="og:title" content="Vietnam Above The Clouds" />
+    <meta
+      property="og:description"
+      content="Hành trình qua 5 đỉnh núi biểu tượng của Việt Nam với selector, quiz, gallery và biểu đồ độ cao tương tác."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/hero/fansipan-hero.webp" />
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Google tag (gtag.js) - replace G-XXXXXXXXXX with your real Measurement ID. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXXXXX");
+    </script>
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true">
+      <span class="scroll-progress__bar"></span>
+    </div>
+
+    <header class="site-header" data-header>
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a class="nav__logo" href="#hero" data-track-cta="logo">
+          <span>Vietnam</span>
+          <strong>Above Clouds</strong>
+        </a>
+        <button class="nav__toggle" type="button" aria-label="Mở menu" aria-expanded="false" data-menu-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav__links" data-menu>
+          <a href="#intro">Khám phá</a>
+          <a href="#top5">Top 5</a>
+          <a href="#altitude">So sánh</a>
+          <a href="#quiz">Chọn đỉnh núi</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#about">About me</a>
+          <a class="button button--small" href="#top5" data-track-cta="start_journey">Bắt đầu</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-observed" id="hero" data-theme="fansipan">
+        <img
+          class="hero__image"
+          src="assets/images/hero/fansipan-hero.webp"
+          alt="Biển mây và dãy núi Fansipan trong ánh sáng bình minh"
+          fetchpriority="high"
+        />
+        <div class="hero__cloud hero__cloud--back"></div>
+        <div class="hero__cloud hero__cloud--front"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content reveal">
+          <p class="eyebrow">5 đỉnh núi đáng chinh phục nhất Việt Nam</p>
+          <h1>Vietnam Above The Clouds</h1>
+          <p class="hero__lead">5 đỉnh núi. 5 tính cách. 1 hành trình chạm mây.</p>
+          <p class="hero__copy">
+            Khám phá những cung đường nơi thiên nhiên, văn hóa và thử thách gặp nhau trên các đỉnh núi biểu tượng của Việt Nam.
+          </p>
+          <div class="hero__actions">
+            <a class="button" href="#top5" data-track-cta="explore_peaks">Khám phá 5 đỉnh núi</a>
+            <a class="button button--ghost" href="#altitude" data-track-cta="view_journey">Xem hành trình</a>
+          </div>
+        </div>
+        <aside class="hero__stat" aria-label="Thông tin Fansipan">
+          <strong>3143 m</strong>
+          <span>Fansipan</span>
+          <small>Nóc nhà Đông Dương</small>
+        </aside>
+        <a class="scroll-cue" href="#intro" aria-label="Cuộn xuống phần giới thiệu">Scroll to ascend</a>
+      </section>
+
+      <section class="intro section section-observed" id="intro">
+        <div class="section__inner intro__grid">
+          <div class="reveal">
+            <p class="eyebrow">Không chỉ là xếp hạng</p>
+            <h2>Không có một cách duy nhất để chinh phục một ngọn núi.</h2>
+          </div>
+          <div class="intro__copy reveal">
+            <p>Có người tìm kiếm đỉnh cao. Có người tìm biển mây. Có người đi tìm lịch sử. Có người chỉ muốn nhìn thấy bình minh phía trên những đám mây.</p>
+            <dl class="intro__metrics">
+              <div><dt>5</dt><dd>Peaks</dd></div>
+              <div><dt>3</dt><dd>Vùng trải nghiệm</dd></div>
+              <div><dt>∞</dt><dd>Khoảnh khắc</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="selector section section-observed" id="selector">
+        <div class="section__inner">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Mountain selector</p>
+            <h2>Bạn đang tìm kiếm điều gì?</h2>
+          </div>
+          <div class="selector__controls reveal" role="group" aria-label="Chọn trải nghiệm núi">
+            <button type="button" class="selector__button is-active" data-filter="cloud">Biển mây</button>
+            <button type="button" class="selector__button" data-filter="challenge">Thử thách</button>
+            <button type="button" class="selector__button" data-filter="culture">Tâm linh</button>
+            <button type="button" class="selector__button" data-filter="beginner">Người mới</button>
+          </div>
+          <div class="selector__results" data-selector-results>
+            <article class="selector-card" data-tags="challenge iconic" data-mountain-card="fansipan">
+              <span>3143 m</span>
+              <h3>Fansipan</h3>
+              <p>Biểu tượng cao nhất, phù hợp cả trekking lẫn du lịch cáp treo.</p>
+            </article>
+            <article class="selector-card" data-tags="culture" data-mountain-card="yen-tu">
+              <span>1068 m</span>
+              <h3>Yên Tử</h3>
+              <p>Không gian văn hóa, lịch sử và tâm linh giữa rừng núi.</p>
+            </article>
+            <article class="selector-card is-highlighted" data-tags="cloud photography" data-mountain-card="ta-chi-nhu">
+              <span>2979 m</span>
+              <h3>Tà Chì Nhù</h3>
+              <p>Biển mây, hoa Chi Pâu và những sườn núi giàu chất thơ.</p>
+            </article>
+            <article class="selector-card" data-tags="challenge trekking" data-mountain-card="ky-quan-san">
+              <span>3046 m</span>
+              <h3>Ky Quan San</h3>
+              <p>Cung đường cho người muốn thử sức với rừng sâu và bình minh Núi Muối.</p>
+            </article>
+            <article class="selector-card is-highlighted" data-tags="cloud beginner camping" data-mountain-card="lao-than">
+              <span>2860 m</span>
+              <h3>Lảo Thẩn</h3>
+              <p>Cánh cửa thân thiện để bắt đầu trekking, cắm trại và săn mây.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="stories section-observed" id="top5" aria-label="Top 5 đỉnh núi">
+        <article class="mountain-story section-observed" id="fansipan" data-theme="fansipan" data-mountain="fansipan">
+          <figure class="mountain-story__media reveal">
+            <img src="assets/images/fansipan/fansipan-01.webp" alt="Khung cảnh núi Fansipan và mây trên dãy Hoàng Liên Sơn" loading="lazy" />
+          </figure>
+          <div class="mountain-story__content reveal">
+            <span class="mountain-story__index">01</span>
+            <h2>Fansipan</h2>
+            <p class="mountain-story__height">3.143 m</p>
+            <h3>Nóc nhà Đông Dương</h3>
+            <p>Một biểu tượng vượt khỏi khái niệm trekking. Fansipan là nơi núi, mây và rừng Hoàng Liên Sơn hội tụ trên nóc nhà Đông Dương.</p>
+            <dl class="data-list">
+              <div><dt>Vị trí</dt><dd>Sa Pa / Hoàng Liên Sơn</dd></div>
+              <div><dt>Phong cách</dt><dd>Iconic Adventure</dd></div>
+              <div><dt>Độ khó</dt><dd>Trung bình đến khó</dd></div>
+              <div><dt>Mùa đẹp</dt><dd>Tháng 10 đến tháng 4</dd></div>
+              <div><dt>Điểm nhấn</dt><dd>Trekking / Cáp treo / Biển mây</dd></div>
+            </dl>
+            <a class="button button--story" href="#fansipan" data-mountain-link="fansipan">Khám phá</a>
+          </div>
+        </article>
+
+        <article class="mountain-story mountain-story--reverse section-observed" id="yen-tu" data-theme="yen-tu" data-mountain="yen_tu">
+          <figure class="mountain-story__media reveal">
+            <img src="assets/images/yen-tu/yen-tu-01.webp" alt="Rừng núi Yên Tử với không gian chùa và mây" loading="lazy" />
+          </figure>
+          <div class="mountain-story__content reveal">
+            <span class="mountain-story__index">02</span>
+            <h2>Yên Tử</h2>
+            <p class="mountain-story__height">1.068 m</p>
+            <h3>Có những đỉnh núi để chiêm nghiệm</h3>
+            <p>Yên Tử tạo chiều sâu khác biệt cho hành trình: không chỉ đi lên cao, mà còn đi qua rừng, chùa, tháp và các lớp lịch sử của thiền phái Trúc Lâm.</p>
+            <dl class="data-list">
+              <div><dt>Vị trí</dt><dd>Quảng Ninh</dd></div>
+              <div><dt>Phong cách</dt><dd>Culture / Spiritual</dd></div>
+              <div><dt>Độ khó</dt><dd>Dễ đến trung bình</dd></div>
+              <div><dt>Mùa đẹp</dt><dd>Xuân và thu</dd></div>
+              <div><dt>Điểm nhấn</dt><dd>Lịch sử / Rừng / Kiến trúc</dd></div>
+            </dl>
+            <a class="button button--story" href="#yen-tu" data-mountain-link="yen_tu">Khám phá</a>
+          </div>
+        </article>
+
+        <article class="mountain-story section-observed" id="ta-chi-nhu" data-theme="ta-chi-nhu" data-mountain="ta_chi_nhu">
+          <figure class="mountain-story__media reveal">
+            <img src="assets/images/ta-chi-nhu/ta-chi-nhu-01.webp" alt="Sườn núi Tà Chì Nhù trong biển mây và sắc hoa Chi Pâu" loading="lazy" />
+          </figure>
+          <div class="mountain-story__content reveal">
+            <span class="mountain-story__index">03</span>
+            <h2>Tà Chì Nhù</h2>
+            <p class="mountain-story__height">2.979 m</p>
+            <h3>Nơi những sườn núi nở hoa trên biển mây</h3>
+            <p>Tà Chì Nhù có vẻ đẹp mộng hơn là dữ dội: biển mây trắng, triền núi rộng và mùa hoa Chi Pâu nhuộm tím những cung đường Tây Bắc.</p>
+            <dl class="data-list">
+              <div><dt>Vị trí</dt><dd>Yên Bái</dd></div>
+              <div><dt>Phong cách</dt><dd>Cloud Sea / Photography</dd></div>
+              <div><dt>Độ khó</dt><dd>Khó</dd></div>
+              <div><dt>Mùa đẹp</dt><dd>Tháng 10 đến tháng 3</dd></div>
+              <div><dt>Điểm nhấn</dt><dd>Hoa Chi Pâu / Biển mây</dd></div>
+            </dl>
+            <a class="button button--story" href="#ta-chi-nhu" data-mountain-link="ta_chi_nhu">Khám phá</a>
+          </div>
+        </article>
+
+        <article class="mountain-story mountain-story--reverse section-observed" id="ky-quan-san" data-theme="ky-quan-san" data-mountain="ky_quan_san">
+          <figure class="mountain-story__media reveal">
+            <img src="assets/images/ky-quan-san/ky-quan-san-01.webp" alt="Cung đường Ky Quan San với núi rừng và ánh bình minh" loading="lazy" />
+          </figure>
+          <div class="mountain-story__content reveal">
+            <span class="mountain-story__index">04</span>
+            <h2>Ky Quan San</h2>
+            <p class="mountain-story__height">3.046 m</p>
+            <h3>Cho những người muốn đi xa hơn giới hạn của mình</h3>
+            <p>Còn được biết đến với tên Bạch Mộc Lương Tử, Ky Quan San là hành trình của sức bền, rừng sâu, sống núi và khoảnh khắc bình minh trên Núi Muối.</p>
+            <dl class="data-list">
+              <div><dt>Vị trí</dt><dd>Lào Cai / Lai Châu</dd></div>
+              <div><dt>Phong cách</dt><dd>Adventure / Trekking</dd></div>
+              <div><dt>Độ khó</dt><dd>Thử thách</dd></div>
+              <div><dt>Mùa đẹp</dt><dd>Tháng 10 đến tháng 4</dd></div>
+              <div><dt>Điểm nhấn</dt><dd>Núi Muối / Bình minh</dd></div>
+            </dl>
+            <a class="button button--story" href="#ky-quan-san" data-mountain-link="ky_quan_san">Khám phá</a>
+          </div>
+        </article>
+
+        <article class="mountain-story section-observed" id="lao-than" data-theme="lao-than" data-mountain="lao_than">
+          <figure class="mountain-story__media reveal">
+            <img src="assets/images/lao-than/lao-than-01.webp" alt="Lảo Thẩn với lều trại, bình minh và biển mây" loading="lazy" />
+          </figure>
+          <div class="mountain-story__content reveal">
+            <span class="mountain-story__index">05</span>
+            <h2>Lảo Thẩn</h2>
+            <p class="mountain-story__height">2.860 m</p>
+            <h3>Nơi hành trình trekking đầu tiên có thể bắt đầu</h3>
+            <p>Lảo Thẩn là cánh cửa dễ tiếp cận hơn vào thế giới trekking Tây Bắc: săn mây, cắm trại và đón bình minh trong một chuyến đi vừa sức.</p>
+            <dl class="data-list">
+              <div><dt>Vị trí</dt><dd>Lào Cai</dd></div>
+              <div><dt>Phong cách</dt><dd>Beginner / Camping</dd></div>
+              <div><dt>Độ khó</dt><dd>Trung bình</dd></div>
+              <div><dt>Mùa đẹp</dt><dd>Tháng 10 đến tháng 4</dd></div>
+              <div><dt>Điểm nhấn</dt><dd>Cắm trại / Săn mây</dd></div>
+            </dl>
+            <a class="button button--story" href="#quiz" data-track-cta="lao_than_quiz">Đây có phải đỉnh núi dành cho bạn?</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="altitude section section-observed" id="altitude">
+        <div class="section__inner">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Altitude journey</p>
+            <h2>5 đỉnh núi — 5 độ cao</h2>
+          </div>
+          <div class="altitude__chart reveal" data-altitude-chart>
+            <div class="altitude__bar" style="--height: 100%" data-value="3143"><span></span><strong>Fansipan</strong><em>3143 m</em></div>
+            <div class="altitude__bar" style="--height: 97%" data-value="3046"><span></span><strong>Ky Quan San</strong><em>3046 m</em></div>
+            <div class="altitude__bar" style="--height: 95%" data-value="2979"><span></span><strong>Tà Chì Nhù</strong><em>2979 m</em></div>
+            <div class="altitude__bar" style="--height: 91%" data-value="2860"><span></span><strong>Lảo Thẩn</strong><em>2860 m</em></div>
+            <div class="altitude__bar" style="--height: 34%" data-value="1068"><span></span><strong>Yên Tử</strong><em>1068 m</em></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz section section-observed" id="quiz">
+        <div class="section__inner quiz__grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Find your mountain</p>
+            <h2>Đỉnh núi nào dành cho bạn?</h2>
+          </div>
+          <form class="quiz__form reveal" data-quiz>
+            <fieldset>
+              <legend>Bạn muốn chuyến đi như thế nào?</legend>
+              <label><input type="radio" name="pace" value="easy" checked /> Nhẹ nhàng</label>
+              <label><input type="radio" name="pace" value="balanced" /> Vừa sức</label>
+              <label><input type="radio" name="pace" value="hard" /> Thử thách</label>
+            </fieldset>
+            <fieldset>
+              <legend>Bạn thích điều gì nhất?</legend>
+              <label><input type="radio" name="interest" value="cloud" checked /> Biển mây</label>
+              <label><input type="radio" name="interest" value="culture" /> Văn hóa</label>
+              <label><input type="radio" name="interest" value="trekking" /> Trekking</label>
+              <label><input type="radio" name="interest" value="camping" /> Camping</label>
+            </fieldset>
+            <fieldset>
+              <legend>Bạn ưu tiên?</legend>
+              <label><input type="radio" name="priority" value="access" checked /> Dễ tiếp cận</label>
+              <label><input type="radio" name="priority" value="view" /> Khung cảnh</label>
+              <label><input type="radio" name="priority" value="achievement" /> Thành tích</label>
+            </fieldset>
+            <button class="button" type="submit" data-track-cta="quiz_submit">Xem kết quả</button>
+          </form>
+          <aside class="quiz__result reveal" data-quiz-result aria-live="polite">
+            <span>Your peak</span>
+            <h3>Lảo Thẩn</h3>
+            <p>Bạn phù hợp với một chuyến trekking vừa sức, cắm trại và săn mây vào sáng sớm.</p>
+            <a class="button button--ghost" href="#lao-than">Xem Lảo Thẩn</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="gallery section section-observed" id="gallery">
+        <div class="section__inner">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Gallery</p>
+            <h2>Moments above the clouds</h2>
+          </div>
+          <div class="gallery__grid reveal">
+            <button class="gallery__item gallery__item--large" type="button" data-gallery="fansipan" data-src="assets/images/fansipan/fansipan-02.webp">
+              <img src="assets/images/fansipan/fansipan-02.webp" alt="Fansipan trong biển mây" loading="lazy" />
+            </button>
+            <button class="gallery__item" type="button" data-gallery="yen_tu" data-src="assets/images/yen-tu/yen-tu-02.webp">
+              <img src="assets/images/yen-tu/yen-tu-02.webp" alt="Lối đi trong rừng Yên Tử" loading="lazy" />
+            </button>
+            <button class="gallery__item" type="button" data-gallery="ta_chi_nhu" data-src="assets/images/ta-chi-nhu/ta-chi-nhu-02.webp">
+              <img src="assets/images/ta-chi-nhu/ta-chi-nhu-02.webp" alt="Biển mây Tà Chì Nhù" loading="lazy" />
+            </button>
+            <button class="gallery__item" type="button" data-gallery="ky_quan_san" data-src="assets/images/ky-quan-san/ky-quan-san-02.webp">
+              <img src="assets/images/ky-quan-san/ky-quan-san-02.webp" alt="Bình minh trên Ky Quan San" loading="lazy" />
+            </button>
+            <button class="gallery__item gallery__item--wide" type="button" data-gallery="lao_than" data-src="assets/images/lao-than/lao-than-02.webp">
+              <img src="assets/images/lao-than/lao-than-02.webp" alt="Cắm trại và săn mây ở Lảo Thẩn" loading="lazy" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing section-observed" id="journey">
+        <img src="assets/images/fansipan/fansipan-03.webp" alt="Dãy núi trong ánh sáng cuối ngày" loading="lazy" />
+        <div class="closing__overlay"></div>
+        <div class="closing__content reveal">
+          <h2>The summit is not the end.</h2>
+          <p>Đỉnh núi không phải điểm kết thúc. Nó là nơi bạn nhìn lại quãng đường mình đã đi qua.</p>
+          <a class="button" href="#hero" data-track-cta="back_to_top">Trở lại đầu hành trình</a>
+        </div>
+      </section>
+
+      <section class="about section section-observed" id="about">
+        <div class="section__inner about__grid">
+          <div class="about__profile reveal">
+            <p class="eyebrow">About me</p>
+            <h2>Nguyễn Văn Độ</h2>
+            <p class="about__role">Linux Software Developer</p>
+            <p>
+              Tôi quan tâm đến Linux, hệ thống nhúng, smarthome và các giải pháp trợ lý ảo có thể hỗ trợ con người trong đời sống hằng ngày.
+              Với nền tảng phát triển phần mềm trên Linux, tôi yêu thích việc xây dựng những hệ thống ổn định, dễ mở rộng và có khả năng kết nối giữa phần cứng, phần mềm và trải nghiệm người dùng.
+            </p>
+            <ul class="tag-list" aria-label="Lĩnh vực quan tâm">
+              <li>Linux</li>
+              <li>Smarthome</li>
+              <li>Voice assistant</li>
+              <li>Automation</li>
+              <li>Embedded software</li>
+            </ul>
+            <p class="about__placeholder">**************<br />**************<br />**************</p>
+          </div>
+          <aside class="about__why reveal">
+            <h3>Vì sao tôi chọn chủ đề này?</h3>
+            <p>
+              Tôi chọn chủ đề 5 đỉnh núi đẹp nhất Việt Nam vì đây là một đề tài có nhiều chất liệu hình ảnh, cảm xúc và dữ liệu để xây dựng một website storytelling.
+              Chủ đề này cũng cho phép kết hợp giữa thiết kế giao diện, trải nghiệm tương tác và nội dung du lịch Việt Nam theo một cách trực quan, hiện đại.
+            </p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div>
+          <h2>Vietnam Above The Clouds</h2>
+          <p>Made for Web Design Project 2026.</p>
+        </div>
+        <nav aria-label="Liên kết chân trang">
+          <a href="#fansipan">Fansipan</a>
+          <a href="#yen-tu">Yên Tử</a>
+          <a href="#ta-chi-nhu">Tà Chì Nhù</a>
+          <a href="#ky-quan-san">Ky Quan San</a>
+          <a href="#lao-than">Lảo Thẩn</a>
+        </nav>
+        <p class="footer__credit">Ảnh placeholder dùng cho mục đích học tập. Có thể thay bằng ảnh thật cùng tên file trong thư mục assets.</p>
+      </div>
+    </footer>
+
+    <div class="lightbox" data-lightbox hidden>
+      <button class="lightbox__close" type="button" aria-label="Đóng ảnh" data-lightbox-close>×</button>
+      <img src="" alt="" data-lightbox-image />
+    </div>
+
+    <script src="js/analytics.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
