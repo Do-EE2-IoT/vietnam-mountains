@@ -54,6 +54,7 @@ img {
 }
 
 .image-path,
+.video-path,
 .mountain-story__media figcaption {
   position: absolute;
   z-index: 3;
@@ -815,39 +816,6 @@ body.is-detail-open {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.video-slot--large span,
-.video-slot--large strong,
-.video-slot--large small {
-  position: relative;
-  z-index: 1;
-  justify-self: start;
-  margin-left: 18px;
-  margin-right: 18px;
-  padding: 6px 10px;
-  border-radius: 4px;
-  background: rgba(87, 20, 7, 0.72);
-  backdrop-filter: blur(8px);
-}
-
-.video-slot--large span {
-  color: var(--accent-gold);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-}
-
-.video-slot--large strong {
-  font-family: var(--font-heading);
-  font-size: clamp(1.6rem, 3vw, 3rem);
-}
-
-.video-slot--large small {
-  max-width: 520px;
-  color: var(--text-main);
-  font-size: 0.96rem;
 }
 
 .altitude {

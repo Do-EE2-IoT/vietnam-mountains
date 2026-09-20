@@ -248,12 +248,14 @@ vietnam-mountains/
 └── assets/
     ├── images/
     │   ├── hero/
-    │   │   └── fansipan-hero.webp
+    │   │   ├── hero.jpg
+    │   │   ├── hero-2.jpg
+    │   │   └── hero-3.jpg
     │   │
     │   ├── fansipan/
-    │   │   ├── fansipan-01.webp
-    │   │   ├── fansipan-02.webp
-    │   │   └── fansipan-03.webp
+    │   │   ├── fansipan-01.jpg
+    │   │   ├── fansipan-02.jpg
+    │   │   └── fansipan-03.jpg
     │   │
     │   ├── yen-tu/
     │   ├── ta-chi-nhu/
@@ -673,10 +675,10 @@ Mô tả 1-2 đoạn:
 - Gợi ý ảnh / video nên dùng.
 
 Image slot:
-assets/images/<mountain>/<mountain>-02.webp
+assets/images/<mountain>/<mountain>-02.jpg
 
 Video slot:
-assets/videos/<mountain>-highlight.mp4
+assets/videos/<mountain>.mp4
 ```
 
 Yêu cầu UX:
@@ -1063,10 +1065,10 @@ Tiêu đề:
 Nội dung gợi ý:
 
 ```text
-Nguyễn Văn Độ
-Linux Software Developer
+Nhập họ và tên
+Người thực hiện dự án
 
-Tôi quan tâm đến Linux, hệ thống nhúng, smarthome và các giải pháp trợ lý ảo có thể hỗ trợ con người trong đời sống hằng ngày. Với nền tảng phát triển phần mềm trên Linux, tôi yêu thích việc xây dựng những hệ thống ổn định, dễ mở rộng và có khả năng kết nối giữa phần cứng, phần mềm và trải nghiệm người dùng.
+Tôi yêu thích việc kết hợp nội dung, hình ảnh và tương tác để tạo ra những trải nghiệm web có cảm xúc nhưng vẫn rõ ràng, dễ theo dõi. Dự án này là cơ hội để tôi luyện tập cách tổ chức thông tin, xử lý media và kể một câu chuyện du lịch Việt Nam bằng giao diện hiện đại.
 
 Một số lĩnh vực tôi quan tâm:
 - Linux system programming
@@ -1092,8 +1094,8 @@ Gợi ý layout:
 ```text
 LEFT:
 ABOUT ME
-Nguyễn Văn Độ
-Linux Software Developer
+Nhập họ và tên
+Người thực hiện dự án
 Short bio...
 
 RIGHT:
@@ -1168,13 +1170,13 @@ Progress bar bên cạnh tăng dần.
 
 ## Feature 2 — Cloud Parallax
 
-Dùng PNG/WebP mây trong suốt.
+Dùng ảnh mây trong suốt nếu cần hiệu ứng parallax.
 
 Ví dụ:
 
 ```text
-cloud-front.webp
-cloud-back.webp
+cloud-front.png
+cloud-back.png
 ```
 
 Di chuyển chậm theo scroll.
@@ -1380,8 +1382,8 @@ Bạn tự chuẩn bị ảnh.
 Ví dụ:
 
 ```text
-assets/images/fansipan/fansipan-01.webp
-assets/images/yen-tu/yen-tu-01.webp
+assets/images/fansipan/fansipan-01.jpg
+assets/images/yen-tu/yen-tu-01.jpg
 ...
 ```
 
@@ -1418,9 +1420,9 @@ Bước 1:
 Codex code toàn bộ website bằng placeholder.
 
 ```text
-fansipan-hero.webp
-fansipan-01.webp
-yen-tu-01.webp
+hero.jpg
+fansipan-01.jpg
+yen-tu-01.jpg
 ...
 ```
 
@@ -1445,7 +1447,7 @@ Không cần quá nhiều.
 ## Hero
 
 ```text
-fansipan-hero.webp
+hero.jpg
 ```
 
 1 ảnh.
@@ -1455,9 +1457,9 @@ fansipan-hero.webp
 ## Fansipan
 
 ```text
-fansipan-01.webp
-fansipan-02.webp
-fansipan-03.webp
+fansipan-01.jpg
+fansipan-02.jpg
+fansipan-03.jpg
 ```
 
 ---
@@ -1465,9 +1467,8 @@ fansipan-03.webp
 ## Yên Tử
 
 ```text
-yen-tu-01.webp
-yen-tu-02.webp
-yen-tu-03.webp
+yen-tu-01.jpg
+yen-tu-02.jpg
 ```
 
 ---
@@ -1475,9 +1476,8 @@ yen-tu-03.webp
 ## Tà Chì Nhù
 
 ```text
-ta-chi-nhu-01.webp
-ta-chi-nhu-02.webp
-ta-chi-nhu-03.webp
+ta-chi-nhu-01.jpg
+ta-chi-nhu-02.jpg
 ```
 
 ---
@@ -1485,9 +1485,8 @@ ta-chi-nhu-03.webp
 ## Ky Quan San
 
 ```text
-ky-quan-san-01.webp
-ky-quan-san-02.webp
-ky-quan-san-03.webp
+ky-quan-san-01.jpg
+ky-quan-san-02.jpg
 ```
 
 ---
@@ -1495,9 +1494,8 @@ ky-quan-san-03.webp
 ## Lảo Thẩn
 
 ```text
-lao-than-01.webp
-lao-than-02.webp
-lao-than-03.webp
+lao-than-01.jpg
+lao-than-02.jpg
 ```
 
 Tổng:
