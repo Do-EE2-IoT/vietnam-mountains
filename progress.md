@@ -130,10 +130,10 @@
 - Đã thêm label đường dẫn ảnh trực tiếp trên các vùng ảnh chính:
   - Hero: `assets/images/hero/hero.jpg`
   - Fansipan story: `assets/images/fansipan/fansipan-01.jpg`
-  - Yên Tử story: `assets/images/yen-tu/yen-tu-01.webp`
-  - Tà Chì Nhù story: `assets/images/ta-chi-nhu/ta-chi-nhu-01.webp`
-  - Ky Quan San story: `assets/images/ky-quan-san/ky-quan-san-01.webp`
-  - Lảo Thẩn story: `assets/images/lao-than/lao-than-01.webp`
+  - Yên Tử story: `assets/images/yen-tu/yen-tu-01.jpg`
+  - Tà Chì Nhù story: `assets/images/ta-chi-nhu/ta-chi-nhu-01.jpg`
+  - Ky Quan San story: `assets/images/ky-quan-san/ky-quan-san-01.jpg`
+  - Lảo Thẩn story: `assets/images/lao-than/lao-than-01.jpg`
   - Closing: `assets/images/fansipan/fansipan-03.jpg`
 - Các ảnh chi tiết trong explore tab vẫn giữ caption đường dẫn riêng.
 - Đã thêm CSS `.image-path` và figcaption overlay để nhìn rõ đường dẫn ảnh mà không phá layout.

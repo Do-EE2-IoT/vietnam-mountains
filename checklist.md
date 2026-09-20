@@ -26,12 +26,12 @@
 - [x] Các vùng ảnh chính hiển thị rõ đường dẫn file ảnh để thay thế sau.
 - [x] Các ảnh section chính đã dùng JPG thật nếu file JPG đã có.
 - [x] Hero đã dùng JPG thật `assets/images/hero/hero.jpg`.
-- [x] Mỗi vùng chi tiết có slot ghi vị trí video 10-30 giây để bổ sung sau.
+- [x] Mỗi vùng chi tiết đã gắn video thật và hiển thị nhãn đường dẫn video.
 - [x] Vùng video trong explore tab đủ rộng và nổi bật.
 - [x] Nội dung khám phá đã mở rộng bằng thông tin tra cứu từ nguồn tham khảo.
 - [x] Nội dung explore tab đã được bổ sung chọn lọc từ `info.md`.
-- [x] Có placeholder quote/review và ghi rõ chỉ thêm khi có nguồn xác minh.
-- [x] Có About Me: Nguyễn Văn Độ, Linux Software Developer.
+- [x] Đã bỏ placeholder quote/review khỏi UI.
+- [x] Có About Me với tên mẫu “Nhập họ và tên”.
 - [x] Có vùng `**************` để tự điền thông tin sau.
 - [x] Có vùng “Vì sao tôi chọn chủ đề này”.
 - [ ] Thay ảnh placeholder bằng ảnh thật nếu muốn nộp bản polish.
