@@ -23,16 +23,16 @@
 - [x] Mỗi núi có độ cao, vị trí, mô tả, độ khó, mùa đẹp, điểm nhấn.
 - [x] Nút “Khám phá” mở explore tab riêng giải thích vì sao từng núi đáng đến.
 - [x] Mỗi vùng chi tiết có chỗ đặt ảnh nổi bật.
-- [x] Các vùng ảnh chính hiển thị rõ đường dẫn file ảnh để thay thế sau.
+- [x] Các vùng ảnh chính đã dùng ảnh thật và không còn overlay đường dẫn.
 - [x] Các ảnh section chính đã dùng JPG thật nếu file JPG đã có.
 - [x] Hero đã dùng JPG thật `assets/images/hero/hero.jpg`.
-- [x] Mỗi vùng chi tiết đã gắn video thật và hiển thị nhãn đường dẫn video.
+- [x] Mỗi vùng chi tiết đã gắn video thật, không còn overlay chữ trên video.
 - [x] Vùng video trong explore tab đủ rộng và nổi bật.
 - [x] Nội dung khám phá đã mở rộng bằng thông tin tra cứu từ nguồn tham khảo.
 - [x] Nội dung explore tab đã được bổ sung chọn lọc từ `info.md`.
 - [x] Đã bỏ placeholder quote/review khỏi UI.
-- [x] Có About Me với tên mẫu “Nhập họ và tên”.
-- [x] Có vùng `**************` để tự điền thông tin sau.
+- [x] Có About Me: Vũ Thị Ngọc Giang.
+- [x] Có ảnh cá nhân trong About Me.
 - [x] Có vùng “Vì sao tôi chọn chủ đề này”.
 - [ ] Thay ảnh placeholder bằng ảnh thật nếu muốn nộp bản polish.
 
