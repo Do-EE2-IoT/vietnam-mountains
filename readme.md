@@ -1065,22 +1065,7 @@ Tiêu đề:
 Nội dung gợi ý:
 
 ```text
-Nhập họ và tên
-Người thực hiện dự án
-
-Tôi yêu thích việc kết hợp nội dung, hình ảnh và tương tác để tạo ra những trải nghiệm web có cảm xúc nhưng vẫn rõ ràng, dễ theo dõi. Dự án này là cơ hội để tôi luyện tập cách tổ chức thông tin, xử lý media và kể một câu chuyện du lịch Việt Nam bằng giao diện hiện đại.
-
-Một số lĩnh vực tôi quan tâm:
-- Linux system programming
-- Smarthome / IoT
-- Voice assistant
-- Automation
-- Embedded software
-
-Thông tin bổ sung:
-**************
-**************
-**************
+Vũ Thị Ngọc Giang
 ```
 
 Vùng “Vì sao tôi chọn chủ đề này”:
@@ -1094,13 +1079,12 @@ Gợi ý layout:
 ```text
 LEFT:
 ABOUT ME
-Nhập họ và tên
-Người thực hiện dự án
-Short bio...
+Vũ Thị Ngọc Giang
+Short bio + Why this topic?
 
 RIGHT:
-Why this topic?
-Short explanation...
+Personal image
+assets/images/user/image.png
 ```
 
 Yêu cầu:

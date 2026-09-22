@@ -56,12 +56,12 @@ Lưu ý: không xóa các dấu `<`, `>`, `</p>`, `</h2>` vì đó là cấu tr�
 
 ### 1.4. Cách thay ảnh
 
-Các ảnh đang dùng đều có đường dẫn hiển thị trực tiếp trên website. Ví dụ:
+Các ảnh đang dùng được khai báo trong `index.html`. Có thể tìm nhanh các đường dẫn dạng:
 
 ```text
-Ảnh hero: assets/images/hero/hero.jpg
-Ảnh section: assets/images/fansipan/fansipan-01.jpg
-Ảnh chi tiết: assets/images/fansipan/fansipan-02.jpg
+assets/images/hero/hero.jpg
+assets/images/fansipan/fansipan-01.jpg
+assets/images/fansipan/fansipan-02.jpg
 ```
 
 Cách dễ nhất để thay ảnh:
@@ -116,7 +116,7 @@ assets/videos/ky-quan-san.mp4
 assets/videos/lao-than.mp4
 ```
 
-Cách thay video giống cách thay ảnh: đặt video mới vào đúng thư mục và giữ nguyên tên file `.mp4`. Website cũng hiển thị nhãn đường dẫn trên từng video để biết video nào đang được dùng.
+Cách thay video giống cách thay ảnh: đặt video mới vào đúng thư mục và giữ nguyên tên file `.mp4`.
 
 ### 1.6. Cách chỉnh thông tin Google Analytics
 
@@ -191,7 +191,7 @@ Website được tối ưu để người xem không chỉ đọc mà còn tươ
 - Nút “Khám phá” mở nội dung chi tiết của từng núi.
 - Có nút quay lại và hỗ trợ quay lại bằng browser Back.
 - Khi rời khỏi tab khám phá, video tự dừng và quay về đầu.
-- Có nhãn đường dẫn ảnh/video để người chỉnh sửa dễ biết file nào đang được dùng.
+- Ảnh và video được tổ chức trong thư mục `assets` rõ ràng để dễ thay thế.
 - Quiz giúp người dùng tìm ngọn núi phù hợp với sở thích.
 - Hiệu ứng reveal khi cuộn trang giúp website sinh động hơn.
 - Có scroll progress để biết người dùng đang xem đến đâu.
