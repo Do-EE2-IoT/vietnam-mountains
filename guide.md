@@ -123,10 +123,10 @@ Cách thay video giống cách thay ảnh: đặt video mới vào đúng thư m
 Trong `index.html`, tìm:
 
 ```text
-G-XXXXXXXXXX
+G-47H53EBP1N
 ```
 
-Thay bằng Measurement ID thật của Google Analytics 4. Sau khi thay, website có thể ghi nhận các lượt xem và tương tác như click nút, mở phần khám phá, làm quiz và độ sâu cuộn trang.
+Website hiện đã được gắn Measurement ID này. Nếu sau này đổi sang tài khoản Google Analytics khác, chỉ cần thay ID trên bằng Measurement ID mới.
 
 ### 1.7. Cách đưa web lên GitHub Pages miễn phí
 
@@ -234,4 +234,4 @@ Các chỉ số có thể theo dõi:
 - Có thể biết nút nào được bấm nhiều.
 - Có thể đánh giá nội dung nào hấp dẫn hơn để cải thiện website.
 
-Để chạy GA thật, chỉ cần thay `G-XXXXXXXXXX` bằng Measurement ID trong Google Analytics. Nếu host bằng GitHub Pages, website có thể ghi nhận dữ liệu thực tế khi có người truy cập.
+Website hiện đã gắn GA4 với Measurement ID `G-47H53EBP1N`. Nếu host bằng GitHub Pages, website có thể ghi nhận dữ liệu thực tế khi có người truy cập.

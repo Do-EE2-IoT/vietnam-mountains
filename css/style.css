@@ -1041,7 +1041,7 @@ body.is-detail-open {
 
 .about__profile h2 {
   max-width: 700px;
-  font-size: clamp(2.35rem, 5vw, 4.2rem);
+  font-size: clamp(1.9rem, 3.8vw, 3.1rem);
 }
 
 .about__why {
